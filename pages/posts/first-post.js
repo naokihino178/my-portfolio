@@ -6,7 +6,7 @@ export default function FirstPost() {
   return (
     <Layout> {/* <Layout></Layout>で囲む！！ →layout.jsとlayout.module.cssで内部がいろいろいじられる*/}
         <Head>
-        <title>First Post</title>
+        <title>pages/first-postのページタイトルだよ</title>
         </Head>
         <h1>First Post</h1>
         <h2>
