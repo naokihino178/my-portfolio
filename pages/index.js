@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-// 自作したgetSortedPostsDataをインポート
+// 自作したgetSortedPostsData（idおよび、並べ替えられたdata）をインポート
 import { getSortedPostsData } from '../lib/posts'
 
 // getStaticPropsはpageコンポーネントでのみ使用可能
@@ -9,6 +9,7 @@ import { getSortedPostsData } from '../lib/posts'
 // したがって、ビルド時にこのページをpre-renderしたいのであれば、最初にデータをとってきて、
 // 次にこの処理するという流れをやってくれよな」と伝える役割もある
 export async function getStaticProps() {
+  // 変数allPostsDataにgetSortedPostsData()を代入
   const allPostsData = getSortedPostsData()
   return {
     props: {
@@ -17,6 +18,7 @@ export async function getStaticProps() {
   }
 }
 
+// allPostDataがHomeコンポーネントに渡される
 export default function Home ({ allPostsData }) {
   return (
     <Layout home>
@@ -24,7 +26,7 @@ export default function Home ({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>日野です。趣味はギターです。最近作曲の勉強を始め、年内にオリジナルソングを一曲作ることが目標です。よろしくお願いします。
+        <p>テストテストテストテストテストテストテストテストテストテストテストテスト
         </p>
         <p>
           <a href="https://bz-vermillion.com/">私が最も好きなアーティストのサイトはこちら</a>
@@ -33,6 +35,7 @@ export default function Home ({ allPostsData }) {
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
+          {/* allPoatsDataをmapで回す */}
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
               {title}
