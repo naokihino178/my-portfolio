@@ -3,13 +3,19 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 // 自作したgetSortedPostsData（idおよび、並べ替えられたdata）をインポート
 import { getSortedPostsData } from '../lib/posts'
+// import Link from 'next/link'
 
 // getStaticPropsはpageコンポーネントでのみ使用可能
 // getStaticPropを使っているということは、Next.jsに、「このページはデータの依存関係を持っている。
 // したがって、ビルド時にこのページをpre-renderしたいのであれば、最初にデータをとってきて、
 // 次にこの処理するという流れをやってくれよな」と伝える役割もある
+// getStaticProps...ビルド時に実行、静的ファイルを事前に生成するためのAPI
+// =※重要※=> 必ず事前にサーバーサイドで実行される。クライアント側で実行されることはない。
+// 再ビルドしない限りいつアクセスしても同じ結果です。時刻やスター数はあくまでビルド時のものです。（GitHubのスター取得のやつからコピペしてきた）
 export async function getStaticProps() {
-  // 変数allPostsDataにgetSortedPostsData()を代入
+  // 3. 変数allPostsDataにgetSortedPostsData()を代入
+  // => props: {allPostData}を返す
+  // => Homeコンポーネントにpropsを渡し、表示
   const allPostsData = getSortedPostsData()
   return {
     props: {
@@ -18,8 +24,8 @@ export async function getStaticProps() {
   }
 }
 
-// allPostDataがHomeコンポーネントに渡される
-export default function Home ({ allPostsData }) {
+// 4. allPostDataをHomeコンポーネントで受け取り、表示
+export default function Home ({ allPostsData }) { // このallPostsDataはどこから来たんや？上からか？なぜ渡せる？→分割代入？？※要復習！！
   return (
     <Layout home>
       <Head>
@@ -36,7 +42,7 @@ export default function Home ({ allPostsData }) {
         <h2 className={utilStyles.headingLg}>Blog</h2>
         <ul className={utilStyles.list}>
           {/* allPoatsDataをmapで回す */}
-          {allPostsData.map(({ id, date, title }) => (
+          {allPostsData.map(({ id, date, title }) => ( // この引数もよくわからん、要確認！！
             <li className={utilStyles.listItem} key={id}>
               {title}
               <br />
@@ -47,6 +53,11 @@ export default function Home ({ allPostsData }) {
           ))}
         </ul>
       </section>
+      {/* <h2>
+            <Link href="/posts/first-post">
+            <a>Go to page</a>
+            </Link>
+      </h2> */}
     </Layout>
   )
 }
