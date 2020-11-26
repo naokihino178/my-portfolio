@@ -31,7 +31,8 @@ import utilStyles from '../../styles/utils.module.css'
         </div>
         {/* ↓本文を表示↓ */}
         <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
-      </article>      </Layout>
+      </article>
+      </Layout>
     )
   }
 
@@ -53,7 +54,8 @@ import utilStyles from '../../styles/utils.module.css'
   // 5⃣. getStaticPathsから!!!!!!!!paramsを受け取る => idからファイル名をたどれる
 export async function getStaticProps({ params }) {
     // ↓呼び出し元にawaitがついたので、呼び出し先でもawaitが必要（もともとasyncがついているので、awaitが使える）
-  const postData = await getPostData(params.id.join('/'))
+  const postData = await getPostData(params.id)
+  // const postData = await getPostData(params.id.join('/'))
   return {
     props: {
       postData
