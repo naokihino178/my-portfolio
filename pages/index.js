@@ -4,6 +4,8 @@ import utilStyles from '../styles/utils.module.css'
 // 自作したgetSortedPostsData（idおよび、並べ替えられたdata）をインポート
 import { getSortedPostsData } from '../lib/posts'
 // import Link from 'next/link'
+import Link from 'next/link'
+import Date from '../components/date'
 
 // getStaticPropsはpageコンポーネントでのみ使用可能
 // getStaticPropを使っているということは、Next.jsに、「このページはデータの依存関係を持っている。
@@ -43,12 +45,22 @@ export default function Home ({ allPostsData }) { // このallPostsDataはどこ
         <ul className={utilStyles.list}>
           {/* allPoatsDataをmapで回す */}
           {allPostsData.map(({ id, date, title }) => ( // この引数もよくわからん、要確認！！
+            // <li className={utilStyles.listItem} key={id}>
+            //   {title}
+            //   <br />
+            //   {id}
+            //   <br />
+            //   {date}
+            // </li>
             <li className={utilStyles.listItem} key={id}>
-              {title}
+              <Link href={`/posts/${id}`}>
+              {/* ↑as使わんでも行けるようになった？？<Link href="/posts/[id]" as={`/posts/${id}`}> */}
+                <a>{title}</a>
+              </Link>
               <br />
-              {id}
-              <br />
-              {date}
+              <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small>
             </li>
           ))}
         </ul>
@@ -58,6 +70,7 @@ export default function Home ({ allPostsData }) { // このallPostsDataはどこ
             <a>Go to page</a>
             </Link>
       </h2> */}
+      
     </Layout>
   )
 }
