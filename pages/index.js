@@ -34,7 +34,7 @@ export default function Home ({ allPostsData }) { // このallPostsDataはどこ
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>テストテストテストテストテストテストテストテストテストテストテストテスト
+        <p>こんにちは。Next.jsを勉強中です。よろしくお願いします。
         </p>
         <p>
           <a href="https://bz-vermillion.com/">私が最も好きなアーティストのサイトはこちら</a>
