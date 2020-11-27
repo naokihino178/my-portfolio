@@ -1,5 +1,5 @@
 ---
-title: 'When to Use Static Generation v.s. Server-side Rendering'
+title: 'DPSで効率よい開発ができるよ'
 date: '2020-01-02'
 ---
 
