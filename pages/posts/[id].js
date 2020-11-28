@@ -5,12 +5,12 @@ import utilStyles from '../../styles/utils.module.css'
   // [
   //   {
   //     params: {
-  //       id: 'ssg-ssr'
+  //       id: '200101'
   //     }
   //   },
   //   {
   //     params: {
-  //       id: 'pre-rendering'
+  //       id: '200401'
   //     }
   //   }
   // ]
@@ -44,7 +44,7 @@ import utilStyles from '../../styles/utils.module.css'
   export async function getStaticPaths() {
     const paths = getAllPostIds()
     return {
-      paths, // => params: {id: 'ssg-ssr'} と　{id: 'pre-rendering'}
+      paths, // => params: {id: '200101'} と　{id: '200401'}
       fallback: false
     }
   }

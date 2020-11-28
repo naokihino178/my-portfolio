@@ -1,1 +1,1 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+[Next.jsチュートリアル](https://nextjs.org/learn)で作ったブログを改変しています。

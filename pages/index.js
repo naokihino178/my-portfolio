@@ -5,7 +5,8 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 // import Link from 'next/link'
 import Link from 'next/link'
-import Date from '../components/date'
+import styles from '../components/layout.module.css' // stylesという名前でlayout.module.cssからインポート
+
 
 // getStaticPropsはpageコンポーネントでのみ使用可能
 // getStaticPropを使っているということは、Next.jsに、「このページはデータの依存関係を持っている。
@@ -28,49 +29,103 @@ export async function getStaticProps() {
 
 // 4. allPostDataをHomeコンポーネントで受け取り、表示
 export default function Home ({ allPostsData }) { // このallPostsDataはどこから来たんや？上からか？なぜ渡せる？→分割代入？？※要復習！！
+  const name = 'Naoki Hino'
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>こんにちは。Next.jsを勉強中です。よろしくお願いします。
-        </p>
-        <p>
-          <a href="https://bz-vermillion.com/">私が最も好きなアーティストのサイトはこちら</a>
-        </p>
+    {/* プロフィール */}
+      <h1>Profile</h1>
+      <section className={styles.profile}>
+        <div>
+              <img
+                src="/images/profile.jpg"
+                className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
+                alt={name}
+              />
+              <h1>{name}</h1>
+        </div>
+        <div className={utilStyles.headingMd}>
+          <p>フロントエンドエンジニアを目指しています。Next.js勉強中。</p>
+        </div>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
-        <ul className={utilStyles.list}>
-          {/* allPoatsDataをmapで回す */}
-          {allPostsData.map(({ id, date, title }) => ( // この引数もよくわからん、要確認！！
-            // <li className={utilStyles.listItem} key={id}>
-            //   {title}
-            //   <br />
-            //   {id}
-            //   <br />
-            //   {date}
-            // </li>
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>
-              {/* ↑as使わんでも行けるようになった？？<Link href="/posts/[id]" as={`/posts/${id}`}> */}
-                <a>{title}</a>
-              </Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
+    {/* スキル */}
+      <h1>Skill</h1>
+      <section className={styles.main}>
+        <div className={styles.item}>
+          <h2 className={utilStyles.headingLg}>HTML</h2>
+          <div className={styles.img}>
+            <img src="/images/html-5.svg" />
+          </div>
+        </div>
+        <div className={styles.item}>
+          <h2 className={utilStyles.headingLg}>CSS</h2>
+          <div className={styles.img}>
+            <img src="/images/css-3.svg" />
+          </div>
+        </div>
+        <div className={styles.item}>
+          <h2 className={utilStyles.headingLg}>Sass</h2>
+          <div className={styles.img}>
+            <img src="/images/sass.svg" />
+          </div>
+        </div>
+        <div className={styles.item}>
+          <h2 className={utilStyles.headingLg}>JavaScript</h2>
+          <div className={styles.img}>
+            <img src="/images/javascript.svg" />
+          </div>
+        </div>
+        <div className={styles.item}>
+          <h2 className={utilStyles.headingLg}>React</h2>
+          <div className={styles.img}>
+            <img src="/images/react.svg" />
+          </div>
+        </div>
+        <div className={styles.item}>
+          <h2 className={utilStyles.headingLg}>Next.js</h2>
+          <div className={styles.img}>
+            <img src="/images/nextjs.svg" />
+          </div>
+        </div>
+        <div className={styles.item}>
+          <h2 className={utilStyles.headingLg}>node.js</h2>
+          <div className={styles.img}>
+            <img src="/images/nodejs.svg" />
+          </div>
+        </div>
+        <div className={styles.item}>
+          <h2 className={utilStyles.headingLg}>Firebase</h2>
+          <div className={styles.img}>
+            <img src="/images/firebase.svg" />
+          </div>
+        </div>
       </section>
-      {/* <h2>
-            <Link href="/posts/first-post">
-            <a>Go to page</a>
-            </Link>
-      </h2> */}
-      
+    {/* ポートフォリオ */}
+        <h1>Portfolio</h1>
+      <section className={styles.main2}>
+        <Link href="https://next-js-tutorial.naokihino178.vercel.app">
+          <button className={styles.item2}>
+            <h2 className={utilStyles.headingLg}>BlogApp</h2>
+          </button>
+        </Link>
+        <Link href="/blog">
+          <button className={styles.item2}>
+            <h2 className={utilStyles.headingLg}>TodoApp</h2>
+          </button>
+        </Link>
+        <Link href="/ChatApp">
+          <button className={styles.item2}>
+            <h2 className={utilStyles.headingLg}>ChatApp</h2>
+          </button>
+        </Link>
+        <Link href="/KakeiboApp">
+          <button className={styles.item2}>
+            <h2 className={utilStyles.headingLg}>KakeiboApp</h2>
+          </button>
+        </Link>
+      </section>
     </Layout>
   )
 }
