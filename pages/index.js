@@ -13,7 +13,6 @@ import Skill from './Skill'
 import Portfolio from './Portfolio'
 import Form from './Form'
 
-
 // getStaticPropsはpageコンポーネントでのみ使用可能
 // getStaticPropを使っているということは、Next.jsに、「このページはデータの依存関係を持っている。
 // したがって、ビルド時にこのページをpre-renderしたいのであれば、最初にデータをとってきて、
