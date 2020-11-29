@@ -8,6 +8,12 @@ import Link from 'next/link'
 import styles from '../components/layout.module.css' // stylesという名前でlayout.module.cssからインポート
 
 
+import Profile from './Profile'
+import Skill from './Skill'
+import Portfolio from './Portfolio'
+import Form from './Form'
+
+
 // getStaticPropsはpageコンポーネントでのみ使用可能
 // getStaticPropを使っているということは、Next.jsに、「このページはデータの依存関係を持っている。
 // したがって、ビルド時にこのページをpre-renderしたいのであれば、最初にデータをとってきて、
@@ -29,104 +35,36 @@ export async function getStaticProps() {
 
 // 4. allPostDataをHomeコンポーネントで受け取り、表示
 export default function Home ({ allPostsData }) { // このallPostsDataはどこから来たんや？上からか？なぜ渡せる？→分割代入？？※要復習！！
-  const name = 'Naoki Hino'
   return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
+    <div className={styles.bg}>
+      <Layout home>
+        <Head>
+          <title>{siteTitle}</title>
+        </Head>
     {/* プロフィール */}
-      <h1>Profile</h1>
-      <section className={styles.profile}>
-        <div>
-              <img
-                src="/images/profile.jpg"
-                className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`}
-                alt={name}
-              />
-              <h1>{name}</h1>
-        </div>
-        <div className={utilStyles.headingMd}>
-          <p>フロントエンドエンジニアを目指しています。Next.js勉強中。</p>
-        </div>
-      </section>
-    {/* スキル */}
-      <h1>Skill</h1>
-      <section className={styles.main}>
-        <div className={styles.item}>
-          <h2 className={utilStyles.headingLg}>HTML</h2>
-          <div className={styles.img}>
-            <img src="/images/html-5.svg" />
-          </div>
-        </div>
-        <div className={styles.item}>
-          <h2 className={utilStyles.headingLg}>CSS</h2>
-          <div className={styles.img}>
-            <img src="/images/css-3.svg" />
-          </div>
-        </div>
-        <div className={styles.item}>
-          <h2 className={utilStyles.headingLg}>Sass</h2>
-          <div className={styles.img}>
-            <img src="/images/sass.svg" />
-          </div>
-        </div>
-        <div className={styles.item}>
-          <h2 className={utilStyles.headingLg}>JavaScript</h2>
-          <div className={styles.img}>
-            <img src="/images/javascript.svg" />
-          </div>
-        </div>
-        <div className={styles.item}>
-          <h2 className={utilStyles.headingLg}>React</h2>
-          <div className={styles.img}>
-            <img src="/images/react.svg" />
-          </div>
-        </div>
-        <div className={styles.item}>
-          <h2 className={utilStyles.headingLg}>Next.js</h2>
-          <div className={styles.img}>
-            <img src="/images/nextjs.svg" />
-          </div>
-        </div>
-        <div className={styles.item}>
-          <h2 className={utilStyles.headingLg}>node.js</h2>
-          <div className={styles.img}>
-            <img src="/images/nodejs.svg" />
-          </div>
-        </div>
-        <div className={styles.item}>
-          <h2 className={utilStyles.headingLg}>Firebase</h2>
-          <div className={styles.img}>
-            <img src="/images/firebase.svg" />
-          </div>
-        </div>
-      </section>
+        <h1 className={utilStyles.margin0Auto}>Profile</h1>
+        <section className={styles.profile}>
+          <Profile />
+        </section>
+    {/* スキル（クリックでモーダルを出し、その技術で何ができるか、どのくらいのレベルかの詳細を記述） */}
+        <h1 className={utilStyles.margin0Auto}>Skill</h1>
+        {/* クリックで何ができるかを表示(hoverで表示でもいいかも、でも一覧で見たいからやっぱこれかな) */}
+        {/* 情報量を増やす & 画像を大きくするため、3*3のタイルでもいいかも（適当に技術一個追加でｗ） */}
+        <section className={styles.main}>
+          <Skill />
+        </section>
     {/* ポートフォリオ */}
-        <h1>Portfolio</h1>
-      <section className={styles.main2}>
-        <Link href="https://next-js-tutorial.naokihino178.vercel.app">
-          <button className={styles.item2}>
-            <h2 className={utilStyles.headingLg}>BlogApp</h2>
-          </button>
-        </Link>
-        <Link href="/blog">
-          <button className={styles.item2}>
-            <h2 className={utilStyles.headingLg}>TodoApp</h2>
-          </button>
-        </Link>
-        <Link href="/ChatApp">
-          <button className={styles.item2}>
-            <h2 className={utilStyles.headingLg}>ChatApp</h2>
-          </button>
-        </Link>
-        <Link href="/KakeiboApp">
-          <button className={styles.item2}>
-            <h2 className={utilStyles.headingLg}>KakeiboApp</h2>
-          </button>
-        </Link>
-      </section>
-    </Layout>
+        <h1 className={utilStyles.margin0Auto}>Portfolio</h1>
+        <section className={styles.main}>
+          <Portfolio />
+        </section>
+    {/* お問い合わせフォーム */}
+        <h1 className={utilStyles.margin0Auto}>Contact</h1>
+        <section className={styles.main2}>
+          <Form />
+        </section>
+      </Layout>
+    </div>
   )
 }
 // Layoutコンポーネントですべてラッピングすることによって、レイアウトはここでは記述せず、純粋に表示するものだけを記述している

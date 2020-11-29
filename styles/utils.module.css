@@ -26,6 +26,11 @@
     font-size: 1.2rem;
     line-height: 1.5;
   }
+
+  .headingSd {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
   
   .borderCircle {
     border-radius: 9999px;
@@ -39,6 +44,18 @@
     padding-top: 1px;
   }
   
+  .margin0Auto {
+    margin: 0 auto;
+  }
+
+  .textAlignCenter {
+    text-align: center;
+  }
+
+  .fontWeightBold {
+    font-weight: bold;
+  }
+
   .list {
     list-style: none;
     padding: 0;
@@ -55,4 +72,24 @@
 
   .flex {
     display: flex;
+  }
+
+  .error {
+    font-size: 0.8rem;
+    color: red;
+  }
+
+  .btn {
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #000;
+    border-radius: 4px;
+    font-weight: bold;
   }

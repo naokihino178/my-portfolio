@@ -7,7 +7,7 @@ export const siteTitle = 'ここはsiteTitle、コンポーネントごとに変
 
 export default function Layout({ children, home }) {// childrenはラップ要素、homeはトップページを表示？？
   return (
-    <div>
+    <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -46,7 +46,7 @@ export default function Layout({ children, home }) {// childrenはラップ要�
           </div>
         )}
       </div>
-    </div>
+    </>
   )
 }
 
