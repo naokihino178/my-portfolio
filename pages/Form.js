@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import Layout from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
+import styles from '../components/layout.module.css'
 
 const Form = () => {
     const [name, setName] = useState('')
@@ -43,51 +45,56 @@ const Form = () => {
     }
 
     return(
-        <div className={utilStyles.headingSd}>
-            <form onSubmit={handleSubmit}>
-                <p className={utilStyles.fontWeightBold}>お名前</p>
-                <input
-                size='20'
-                value = {name}
-                onChange={e => {
-                    setName(e.target.value)
-                }}
-                />
-                <span className={utilStyles.error}>{nameErrorText}</span>
-                <p className={utilStyles.fontWeightBold}>電話番号</p>
-                <input
-                size='20'
-                value = {tel}
-                onChange={e => {
-                    setTel(e.target.value)
-                }}
-                />
-                <span className={utilStyles.error}>{telErrorText}</span>
-                <p className={utilStyles.fontWeightBold}>メールアドレス</p>
-                <input
-                size='30'
-                value = {email}
-                onChange={e => {
-                    setEmail(e.target.value)
-                }}
-                />
-                <span className={utilStyles.error}>{emailErrorText}</span>
-                <p className={utilStyles.fontWeightBold}>お問い合わせ内容</p>
-                <textarea
-                cols='40'
-                rows='10'
-                value = {content}
-                onChange={e => {
-                    setContent(e.target.value)
-                }}
-                />
-                <span className={utilStyles.error}>{contentErrorText}</span>
-                <br />
-                <button className={utilStyles.btn} type="submit" value="送信">
-                    送信
-                </button>  
-            </form>
-        </div>
+        <Layout>
+            <h1 className={`${utilStyles.textAlignCenter} ${utilStyles.margin0Auto}`}>--- Contact ---</h1>
+            <section className={styles.main}>
+                <div className={utilStyles.headingSd}>
+                    <form onSubmit={handleSubmit}>
+                        <p className={utilStyles.fontWeightBold}>お名前</p>
+                        <input
+                        size='20'
+                        value = {name}
+                        onChange={e => {
+                            setName(e.target.value)
+                        }}
+                        />
+                        <span className={utilStyles.error}>{nameErrorText}</span>
+                        <p className={utilStyles.fontWeightBold}>電話番号</p>
+                        <input
+                        size='20'
+                        value = {tel}
+                        onChange={e => {
+                            setTel(e.target.value)
+                        }}
+                        />
+                        <span className={utilStyles.error}>{telErrorText}</span>
+                        <p className={utilStyles.fontWeightBold}>メールアドレス</p>
+                        <input
+                        size='30'
+                        value = {email}
+                        onChange={e => {
+                            setEmail(e.target.value)
+                        }}
+                        />
+                        <span className={utilStyles.error}>{emailErrorText}</span>
+                        <p className={utilStyles.fontWeightBold}>お問い合わせ内容</p>
+                        <textarea
+                        cols='40'
+                        rows='5'
+                        value = {content}
+                        onChange={e => {
+                            setContent(e.target.value)
+                        }}
+                        />
+                        <span className={utilStyles.error}>{contentErrorText}</span>
+                        <br />
+                        <button className={utilStyles.btn} type="submit" value="送信">
+                            送信
+                        </button>  
+                    </form>
+                </div>
+            </section>
+        </Layout>
     );
 }
 

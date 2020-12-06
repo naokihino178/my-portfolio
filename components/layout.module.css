@@ -1,84 +1,117 @@
 .bg {
   width: 100%;
+  /* height: 100vh; */
   background-image: url("../public/images/gravel.png");
 }
 
 .container {
-    max-width: 65rem;
-    padding: 2rem 1rem;
+    max-width: 68rem;
+    padding: 0em 1em 2em;
     margin: 0 auto;
   }
   
-  /* .header {
-    width: 100%;
-    height: 70px; */
+  .header {
+    font-weight: bold;
+    height: 70px;
     /* position: fixed; */
-    /* display: flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(206, 145, 235);
-  } */
+    background-image: url("../public/images/gravel.png");
+    z-index: 1;
+    color: #000;
+    width: 100%;
+    padding: 0 2rem;
+  }
   
+  .nav {
+    margin-left: 100px;
+  }
+
   .headerImage {
     width: 6rem;
     height: 6rem;
   }
   
   .headerHomeImage {
-    width: 8rem;
+    width: 50%;
     height: 8rem;
+    margin: 0 50px 0
   }
   
   .backToHome {
     margin: 3rem 0 0;
   }
 
-  .profile {
-    margin-bottom: 50px;
+  .top {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
-    background: #fff;
   }
-/* Linkで飛ぶのとSSGで飛ぶのの違いはなんや、どうやって分けるんや */
-  .main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 50px;
+
+  /* Linkで飛ぶのとSSGで飛ぶのの違いはなんや、どうやって分けるんや */
+  .mainContainer {
+    width: 75%;
     padding: 20px 20px;
+    margin-left: 30%;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
     background:#fff;
   }
 
+  .subContainer {
+    width: 25%;
+    height: 515px;
+    padding: 20px 20px;
+    position: fixed;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    background:#fff;
+  }
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 20px;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    background:#fff;
+  }
+  
   .item {
-    width: 24%;
-    height: 250px;
-    margin: 20px 0;
-    padding: 0px 30px;
+    width: 19%;
+    height: 220px;
+    margin: 10px 0;
+    padding: 0 30px;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .3);
     position: relative;
     user-select: none;
     cursor: pointer;
   }
-
+  
   .img {
     width: 40%;
     margin: 0 auto;
-    left: 50%;
     position: absolute;
     top: 60%;
+    left: 50%;
     transform: translate(-50%,-50%);
     transition-duration: 0.1s;
+  }
+  
+  .desc {
+    padding-right: 10px;
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition-duration: 0.1s;
+    font-weight: bold;
   }
   
   .item:hover {
     background-color: rgb(252, 225, 248);
   }
-
+  
   .item2 {
-    width: 24%;
+    width: 49%;
     height: 250px;
     margin: 20px 0;
     padding: 15px 20px;
@@ -86,12 +119,9 @@
     user-select: none;
     cursor: pointer;
   }
-
-  .main2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px 20px;
+  
+  .profile {
+    padding: 30px;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
     background: #fff;
   }

@@ -5,9 +5,9 @@ import Link from 'next/link'
 
 export const siteTitle = 'ここはsiteTitle、コンポーネントごとに変えれるよ'
 
-export default function Layout({ children, home }) {// childrenはラップ要素、homeはトップページを表示？？
+export default function Layout({ children }) {// childrenはラップ要素、homeはトップページを表示？？
   return (
-    <>
+    <div className={styles.bg}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -29,25 +29,22 @@ export default function Layout({ children, home }) {// childrenはラップ要�
           content="summary_large_image"
         />
       </Head>
-      {/* <header className={styles.header}>
-        <Link href="/">
-          <a>Hino</a>
-        </Link>
-      </header> */}
+      <header className={`${styles.header} ${utilStyles.headingLg}`}>
+        <div>
+          <Link href="/"><a>Profile</a></Link>
+        </div>
+        <div>
+          <Link href="/Skill"><a className={styles.nav}>Skill</a></Link>
+          <Link href="/Portfolio"><a className={styles.nav}>Portfolio</a></Link>
+          <Link href="/Form"><a className={styles.nav}>Contact</a></Link>
+        </div>
+      </header>
       <div className={styles.container}>
-        {/* ここでやっとindex.jsのLayoutで囲まれた部分が表示 */}
-        <main>{children}</main>{/*Layoutコンポーネントがラッピングしている中身を表示*/}
-        
-        {!home && (// homeがfalse
-          <div className={styles.backToHome}>
-            <Link href="/">
-              <a>TOPへ戻る</a>{/* どのページにも表示 */}
-            </Link>
-          </div>
-        )}
+        <div>
+          {/* ここでやっとindex.jsのLayoutで囲まれた部分が表示 */}
+          <main>{children}</main>{/*Layoutコンポーネントがラッピングしている中身を表示*/}
+        </div>
       </div>
-    </>
+    </div>
   )
 }
-
-// homeがtrueかfalseかで色々変えることができる
