@@ -1,0 +1,134 @@
+.bg {
+  width: 100%;
+  /* height: 100vh; */
+  /* background-image: url("../public/images/gravel.png"); */
+  background: #282d33;
+}
+
+.container {
+  max-width: 85rem;
+  padding: 0em 1em 2em;
+  margin: 0 auto;
+  color: #55adc8;
+  font-family: "Arial", "メイリオ";
+}
+
+.header {
+  font-weight: bold;
+  height: 70px;
+  /* position: fixed; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-image: url("../public/images/gravel.png"); */
+  color: #55adc8;
+  background: #202429;
+  z-index: 1;
+  width: 100%;
+  padding: 0 2rem;
+  font-family: "Arial", "メイリオ";
+}
+
+.nav {
+  margin-left: 100px;
+}
+
+.headerImage {
+  width: 6rem;
+  height: 6rem;
+}
+
+.headerHomeImage {
+  width: 50%;
+  height: 8rem;
+  margin: 0 50px 0;
+}
+
+.backToHome {
+  margin: 3rem 0 0;
+}
+
+.top {
+  display: flex;
+  color: #000;
+}
+
+/* Linkで飛ぶのとSSGで飛ぶのの違いはなんや、どうやって分けるんや */
+.mainContainer {
+  width: 75%;
+  padding: 20px 20px;
+  margin-left: 30%;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+  background: #ECECEC;
+}
+
+.subContainer {
+  width: 25%;
+  height: 515px;
+  padding: 20px 20px;
+  position: fixed;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+  background: #ECECEC;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 20px 20px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+  background: #ECECEC;
+  color: #000;
+}
+
+.item {
+  width: 15%;
+  height: 210px;
+  margin: 10px 10px;
+  padding: 0 30px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
+  user-select: none;
+  cursor: pointer;
+}
+
+.img {
+  width: 40%;
+  margin: 0 auto;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 0.1s;
+}
+
+.desc {
+  padding-right: 10px;
+  width: 90%;
+  margin: 0 auto;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 0.1s;
+  font-weight: bold;
+}
+
+.item:hover {
+  background-color: rgb(252, 225, 248);
+}
+
+.item2 {
+  width: 49%;
+  height: 300px;
+  margin: 20px 0;
+  padding: 15px 20px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.3);
+  user-select: none;
+  cursor: pointer;
+}
+
+.profile {
+  padding: 30px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+  background: #ECECEC;
+}
