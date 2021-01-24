@@ -46,7 +46,7 @@ const Form = () => {
 
     return(
         <Layout>
-            <h1 className={`${utilStyles.textAlignCenter} ${utilStyles.margin0Auto}`}>--- Contact ---</h1>
+            <h1 className={`${utilStyles.textAlignCenter} ${utilStyles.margin0Auto}`}>Contact</h1>
             <section className={styles.main}>
                 <div className={utilStyles.headingSd}>
                     <form onSubmit={handleSubmit}>

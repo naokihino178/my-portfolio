@@ -7,7 +7,7 @@ const Profile = () => {
     const name = '日野　尚輝'
     return (
     <Layout>
-        <h1 className={`${utilStyles.textAlignCenter} ${utilStyles.margin0Auto}`}>--- Profile ---</h1>
+        <h1 className={`${utilStyles.textAlignCenter} ${utilStyles.margin0Auto}`}>Profile</h1>
         <section className={styles.top}>
             <div className={styles.subContainer}>
                 <img
