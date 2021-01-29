@@ -142,7 +142,7 @@ const Skill = () => {
   
   const descNodejs = (
     <ul className={styles.desc}>
-      <li>基本的なことはできます。</li>
+      <li>HTTPメソッド</li>
     </ul>
   );
   const imgExpress = (
@@ -153,7 +153,7 @@ const Skill = () => {
   
   const descExpress = (
     <ul className={styles.desc}>
-      <li>基本的なことはできます。</li>
+      <li>REST APIを設計し、APIサーバーを立てることができます。</li>
     </ul>
   );
   
