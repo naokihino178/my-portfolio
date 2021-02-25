@@ -424,9 +424,6 @@ const Skill = () => {
 
   return (
     <Layout>
-      <h1 className={`${utilStyles.textAlignCenter} ${utilStyles.margin0Auto}`}>
-        Skill
-      </h1>
       {/* クリックで何ができるかを表示(hoverで表示でもいいかも、でも一覧で見たいからやっぱこれかな) */}
       {/* 情報量を増やす & 画像を大きくするため、3*3のタイルでもいいかも（適当に技術一個追加でｗ） */}
         <h3>マークアップ言語</h3>

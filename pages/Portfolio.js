@@ -6,7 +6,6 @@ import Layout from '../components/layout'
 const Portfolio = () => {
     return (
     <Layout>
-        <h1 className={`${utilStyles.textAlignCenter} ${utilStyles.margin0Auto}`}>Portfolio</h1>
         <section className={styles.main}>
             <Link href="https://next-js-tutorial.naokihino178.vercel.app">
                 <button className={styles.item2}>

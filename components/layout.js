@@ -1,11 +1,12 @@
-import Head from 'next/head'
-import styles from './layout.module.css' // stylesという名前でlayout.module.cssからインポート
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import Head from "next/head";
+import styles from "./layout.module.css"; // stylesという名前でlayout.module.cssからインポート
+import utilStyles from "../styles/utils.module.css";
+import Link from "next/link";
 
-export const siteTitle = 'ここはsiteTitle、コンポーネントごとに変えれるよ'
+export const siteTitle = "ここはsiteTitle、コンポーネントごとに変えれるよ";
 
-export default function Layout({ children }) {// childrenはラップ要素、homeはトップページを表示？？
+export default function Layout({ children }) {
+  // childrenはラップ要素、homeはトップページを表示？？
   return (
     <div className={styles.bg}>
       <Head>
@@ -29,22 +30,34 @@ export default function Layout({ children }) {// childrenはラップ要素、ho
           content="summary_large_image"
         />
       </Head>
-      <header className={`${styles.header} ${utilStyles.headingLg}`}>
-        <div>
-          <Link href="/"><a>Profile</a></Link>
+      <header className={`${styles.header} ${utilStyles.headingSd}`}>
+        <div className={styles.headerLogoContainer}>
+        <Link href="/">
+          <a className={styles.headerLogo}>NAOKI HOUSE</a>
+        </Link>
         </div>
-        <div>
-          <Link href="/Skill"><a className={styles.nav}>Skill</a></Link>
-          <Link href="/Portfolio"><a className={styles.nav}>Portfolio</a></Link>
-          <Link href="/Form"><a className={styles.nav}>Contact</a></Link>
+        <div className={styles.headerNavContainer}>
+          <Link href="/">
+            <a className={styles.nav}>プロフィール</a>
+          </Link>
+          <Link href="/Skill">
+            <a className={styles.nav}>スキル</a>
+          </Link>
+          <Link href="/Portfolio">
+            <a className={styles.nav}>製作物</a>
+          </Link>
+          <Link href="/Form">
+            <a className={styles.nav}>お問い合わせ</a>
+          </Link>
         </div>
       </header>
       <div className={styles.container}>
         <div>
           {/* ここでやっとindex.jsのLayoutで囲まれた部分が表示 */}
-          <main>{children}</main>{/*Layoutコンポーネントがラッピングしている中身を表示*/}
+          <main>{children}</main>
+          {/*Layoutコンポーネントがラッピングしている中身を表示*/}
         </div>
       </div>
     </div>
-  )
+  );
 }
