@@ -7,7 +7,7 @@
 
 .container {
   max-width: 85rem;
-  padding: 8em 1em 2em;
+  padding: 9em 1em 2em;
   margin: 0 auto;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
     Meiryo, "ＭＳ Ｐゴシック", sans-serif;
@@ -19,7 +19,6 @@
   background: #0d4237;
   z-index: 1;
   width: 100%;
-  /* background-image: url("../public/images/gravel.png"); */
 }
 
 .headerLogoContainer {
@@ -27,17 +26,24 @@
 }
 
 .headerLogo {
-  color: #fff;
-  font-size: 30px;
+  width: 400px;
+  height: 70px;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.headerLogo:hover {
+  cursor: pointer;
 }
 
 .headerNavContainer {
-  font-weight: bold;
+  width: 500px;
   height: 70px;
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 12rem;
+  margin: 0 auto;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
     Meiryo, "ＭＳ Ｐゴシック", sans-serif;
 }
@@ -87,7 +93,7 @@
 .main {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: left;
   padding: 20px 20px;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
   background: #ececec;
@@ -95,8 +101,7 @@
 }
 
 .item {
-  width: 15%;
-  /* width: 22%; */
+  width: 210px;
   height: 210px;
   margin: 10px 10px;
   padding: 5px 30px;
@@ -144,7 +149,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .profile {
@@ -155,4 +159,57 @@
 
 .portfolioDesc {
   width: 70%;
+}
+
+/* お問い合わせ */
+.nameInput,
+.telInput,
+.mailInput {
+  /* 背景色(任意の色を指定) */
+  background-color: #eee;
+
+  /* 枠線 */
+  border: 1px solid #000;
+  transition: border 0.2s ease-out;
+
+  /* 文字色を親から継承 */
+  color: inherit;
+
+  /* 任意の高さ */
+  height: 45px;
+
+  /*inputのフォーカス時の枠線を消す*/
+  outline: 0;
+
+  font-size: 20px;
+}
+
+.contactInput {
+  /* 背景色(任意の色を指定) */
+  background-color: #eee;
+
+  /* 枠線 */
+  border: 1px solid #000;
+  transition: border 0.2s ease-out;
+
+  /* 文字色を親から継承 */
+  color: inherit;
+
+  /* 任意の高さ */
+  height: 90px;
+
+  /*inputのフォーカス時の枠線を消す*/
+  outline: 0;
+
+  /* textareaの右下の線を消す */
+  resize: none;
+
+  font-size: 20px;
+}
+
+.nameInput:focus,
+.telInput:focus,
+.mailInput:focus,
+.contactInput:focus {
+  border: 1px solid#e74c3c;
 }

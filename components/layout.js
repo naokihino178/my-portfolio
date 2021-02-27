@@ -32,9 +32,11 @@ export default function Layout({ children }) {
       </Head>
       <header className={`${styles.header} ${utilStyles.headingSd}`}>
         <div className={styles.headerLogoContainer}>
-        <Link href="/">
-          <a className={styles.headerLogo}>NAOKI HOUSE</a>
-        </Link>
+          <Link href="/">
+            <div className={styles.headerLogo}>
+              <img src="/images/PortfolioLogo.png" />
+            </div>
+          </Link>
         </div>
         <div className={styles.headerNavContainer}>
           <Link href="/">

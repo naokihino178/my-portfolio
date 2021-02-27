@@ -56,6 +56,7 @@ const Form = () => {
                         onChange={e => {
                             setName(e.target.value)
                         }}
+                        className={styles.nameInput}
                         />
                         <span className={utilStyles.error}>{nameErrorText}</span>
                         <p className={utilStyles.fontWeightBold}>電話番号</p>
@@ -65,6 +66,7 @@ const Form = () => {
                         onChange={e => {
                             setTel(e.target.value)
                         }}
+                        className={styles.telInput}
                         />
                         <span className={utilStyles.error}>{telErrorText}</span>
                         <p className={utilStyles.fontWeightBold}>メールアドレス</p>
@@ -74,6 +76,7 @@ const Form = () => {
                         onChange={e => {
                             setEmail(e.target.value)
                         }}
+                        className={styles.mailInput}
                         />
                         <span className={utilStyles.error}>{emailErrorText}</span>
                         <p className={utilStyles.fontWeightBold}>お問い合わせ内容</p>
@@ -84,6 +87,7 @@ const Form = () => {
                         onChange={e => {
                             setContent(e.target.value)
                         }}
+                        className={styles.contactInput}
                         />
                         <span className={utilStyles.error}>{contentErrorText}</span>
                         <br />
