@@ -429,80 +429,80 @@ const Skill = () => {
       <h3>マークアップ言語</h3>
       <section className={styles.main}>
         <div className={styles.item} onClick={handleHtml}>
-          <h2 className={utilStyles.headingMd}>HTML</h2>
+          <h2 className={utilStyles.headingSd}>HTML</h2>
           {html}
         </div>
         <div className={styles.item} onClick={handleCss}>
-          <h2 className={utilStyles.headingMd}>CSS</h2>
+          <h2 className={utilStyles.headingSd}>CSS</h2>
           {css}
         </div>
         <div className={styles.item} onClick={handleSass}>
-          <h2 className={utilStyles.headingMd}>Sass</h2>
+          <h2 className={utilStyles.headingSd}>Sass</h2>
           {sass}
         </div>
         <div className={styles.item} onClick={handleTailwindcss}>
-          <h2 className={utilStyles.headingMd}>Tailwind CSS</h2>
+          <h2 className={utilStyles.headingSd}>Tailwind CSS</h2>
           {tailwindcss}
         </div>
       </section>
       <h3>プログラミング言語、ライブラリ、フレームワーク</h3>
       <section className={styles.main}>
         <div className={styles.item} onClick={handleJavascript}>
-          <h2 className={utilStyles.headingMd}>JavaScript</h2>
+          <h2 className={utilStyles.headingSd}>JavaScript</h2>
           {javascript}
         </div>
         <div className={styles.item} onClick={handleTypescript}>
-          <h2 className={utilStyles.headingMd}>TypeScript</h2>
+          <h2 className={utilStyles.headingSd}>TypeScript</h2>
           {typescript}
         </div>
         <div className={styles.item} onClick={handleReact}>
-          <h2 className={utilStyles.headingMd}>React</h2>
+          <h2 className={utilStyles.headingSd}>React</h2>
           {react}
         </div>
         <div className={styles.item} onClick={handleRedux}>
-          <h2 className={utilStyles.headingMd}>Redux</h2>
+          <h2 className={utilStyles.headingSd}>Redux</h2>
           {redux}
         </div>
         <div className={styles.item} onClick={handleNextjs}>
-          <h2 className={utilStyles.headingMd}>Next.js</h2>
+          <h2 className={utilStyles.headingSd}>Next.js</h2>
           {nextjs}
         </div>
         <div className={styles.item} onClick={handleNodejs}>
-          <h2 className={utilStyles.headingMd}>node.js</h2>
+          <h2 className={utilStyles.headingSd}>node.js</h2>
           {nodejs}
         </div>
         <div className={styles.item} onClick={handleExpress}>
-          <h2 className={utilStyles.headingMd}>Express</h2>
+          <h2 className={utilStyles.headingSd}>Express</h2>
           {express}
         </div>
       </section>
       <h3>データベース</h3>
       <section className={styles.main}>
         <div className={styles.item} onClick={handleMysql}>
-          <h2 className={utilStyles.headingMd}>MySQL</h2>
+          <h2 className={utilStyles.headingSd}>MySQL</h2>
           {mysql}
         </div>
         <div className={styles.item} onClick={handleSqlite}>
-          <h2 className={utilStyles.headingMd}>sqlite</h2>
+          <h2 className={utilStyles.headingSd}>sqlite</h2>
           {sqlite}
         </div>
         <div className={styles.item} onClick={handleFirebase}>
-          <h2 className={utilStyles.headingMd}>Firebase</h2>
+          <h2 className={utilStyles.headingSd}>Firebase</h2>
           {firebase}
         </div>
       </section>
       <h3>その他</h3>
       <section className={styles.main}>
         <div className={styles.item} onClick={handleGit}>
-          <h2 className={utilStyles.headingMd}>Git</h2>
+          <h2 className={utilStyles.headingSd}>Git</h2>
           {git}
         </div>
         <div className={styles.item} onClick={handleGithub}>
-          <h2 className={utilStyles.headingMd}>GitHub</h2>
+          <h2 className={utilStyles.headingSd}>GitHub</h2>
           {github}
         </div>
         <div className={styles.item} onClick={handlePostman}>
-          <h2 className={utilStyles.headingMd}>Postman</h2>
+          <h2 className={utilStyles.headingSd}>Postman</h2>
           {postman}
         </div>
       </section>
