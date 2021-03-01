@@ -32,13 +32,13 @@ export default function Layout({ children }) {
         />
       </Head>
       <header className={`${styles.header} ${utilStyles.headingSd}`}>
-        <div className={styles.headerLogoContainer}>
+        {/* <div className={styles.headerLogoContainer}>
           <Link href="/">
             <div className={styles.headerLogo}>
               <img src="/images/PortfolioLogo.png" />
             </div>
           </Link>
-        </div>
+        </div> */}
         <div className={styles.headerNavContainer}>
           <Link href="/">
             <a className={styles.nav}>プロフィール</a>
@@ -47,7 +47,10 @@ export default function Layout({ children }) {
             <a className={styles.nav}>スキル</a>
           </Link>
           <Link href="/Portfolio">
-            <a className={styles.nav}>製作物</a>
+            <a className={styles.nav}>製作物(オリジナル)</a>
+          </Link>
+          <Link href="/Portfolio">
+            <a className={styles.nav}>製作物(コピー)</a>
           </Link>
           <Link href="/Form">
             <a className={styles.nav}>お問い合わせ</a>

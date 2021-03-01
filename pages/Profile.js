@@ -19,30 +19,20 @@ const Profile = () => {
           >
             {name}
           </p>
+          <div>1995年</div>
+          <div>島根県で誕生</div>
+          <div>2018年</div>
+          <div>鳥取大学農学部卒業</div>
+          <div>2020年</div>
           <div>
-            1995年
-            <br />
-            島根県で誕生
-          </div>
-          <div>
-            2018年
-            <br />
-            鳥取大学農学部卒業
-          </div>
-          <div>
-            2020年
-            <br />
             鳥取大学大学院
             <br />
             持続性社会創生化学研究科
             <br />
             農学専攻　修了
           </div>
-          <div>
-            2020年
-            <br />
-            神戸天然物化学株式会社　入社
-          </div>
+          <div>2020年</div>
+          <div>神戸天然物化学株式会社　入社</div>
           <a href="https://twitter.com/warabukki">
             <button className={utilStyles.twitterButton}>t</button>
           </a>
@@ -56,7 +46,8 @@ const Profile = () => {
           <h2 className={utilStyles.outline}>現職について</h2>
           <p>有機合成品の受託開発を行う会社で品質管理の仕事をしています。</p>
           <p>
-            自社で製造した製品を、様々な装置（LC, GC, ICP-MS, KF水分計など）を用いて分析しています。
+            自社で製造した製品を、様々な装置（LC, GC, ICP-MS,
+            KF水分計など）を用いて分析しています。
           </p>
           <h2 className={utilStyles.outline}>アピールポイント</h2>
           <ul>
@@ -95,7 +86,9 @@ const Profile = () => {
           <ul>
             <li className={utilStyles.fontWeightBold}>普通自動車運転免許</li>
             <li className={utilStyles.fontWeightBold}>普通自動二輪運転免許</li>
-            <li className={utilStyles.fontWeightBold}>TOEIC Listening & Reading TEST 740点</li>
+            <li className={utilStyles.fontWeightBold}>
+              TOEIC Listening & Reading TEST 740点
+            </li>
           </ul>
         </div>
       </section>

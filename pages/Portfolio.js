@@ -3,6 +3,9 @@ import styles from "../components/layout.module.css"; // stylesという名前�
 import Link from "next/link";
 import Layout from "../components/layout";
 
+// タイルクリックで使用しているポートフォリオと切り替えてもいいかも
+// それぞれのポートフォリオをクリックで飛べるように
+
 const Portfolio = () => {
   return (
     <Layout>
@@ -11,7 +14,7 @@ const Portfolio = () => {
           <button className={styles.item2}>
             <div className={styles.portfolioDesc}>
               <h2 className={utilStyles.headingLg}>ブログ</h2>
-              <p className={utilStyles.headingMd}>Next.js + TypeScript</p>
+              <p className={utilStyles.headingMd}>(Next.js, TypeScript)</p>
               <ul>
                 <li>自らの学習の進捗をまとめたブログです。</li>
                 <li>
@@ -31,7 +34,7 @@ const Portfolio = () => {
           <button className={styles.item2}>
             <div className={styles.portfolioDesc}>
               <h2 className={utilStyles.headingLg}>クイズアプリ</h2>
-              <p className={utilStyles.headingMd}>React + Firebase</p>
+              <p className={utilStyles.headingMd}>(React, Material-UI, Firebase)</p>
               <ul>
                 <li>Material UIを用いてモダンなUIを実現しています。</li>
                 <li>
@@ -46,20 +49,18 @@ const Portfolio = () => {
             />
           </button>
         </Link>
-        <Link href="/ChatApp">
+        <Link href="https://orenosetsuyakumeshi.herokuapp.com/">
           <button className={styles.item2}>
             <div className={styles.portfolioDesc}>
               <h2 className={utilStyles.headingLg}>節約レシピ管理アプリ</h2>
-              <p className={utilStyles.headingMd}>Express + MySQL</p>
+              <p className={utilStyles.headingMd}>(EJS, Express, MySQL, CircleCI, Heroku)</p>
               <ul>
                 <li>節約レシピを管理するアプリです。</li>
                 <li>
-                  調理工程を入力しやすくするため、一工程ずつインプットフォームを作成しました。
+                  私が7年間の一人暮らしで開発した節約レシピをぜひご覧ください。
                 </li>
-                <li>作成したレシピは安い順に並ぶようにしてあります。</li>
-                <li>テンプレートエンジンとしてEJSを用いました。</li>
                 <li>
-                  HCircleCIを用いて、GitHubにプッシュすると自動でHerokuへデプロイされるようになっています。
+                  調理工程を入力しやすくするため、一工程ずつインプットフォームを作成しました。
                 </li>
               </ul>
             </div>
@@ -75,7 +76,7 @@ const Portfolio = () => {
             <div className={styles.portfolioDesc}>
               <h2 className={utilStyles.headingLg}>Todo管理アプリ</h2>
               <p className={utilStyles.headingMd}>
-                React + TypeScript + Firebase
+                (React, TypeScript, Material-UI, Firebase)
               </p>
               <ul>
                 <li>シンプルなTodoアプリです。</li>
