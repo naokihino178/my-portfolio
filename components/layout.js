@@ -11,6 +11,7 @@ export default function Layout({ children }) {
     <div className={styles.bg}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"></link>
         <meta
           name="description" // 検索した際にタイトルの下に説明文として表示
           content="Learn how to build a personal website using Next.js"
