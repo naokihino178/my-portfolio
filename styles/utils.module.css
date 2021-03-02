@@ -29,11 +29,6 @@
   line-height: 1.5;
 }
 
-.profileImg {
-  border-radius: 9999px;
-  width: 150px;
-  margin: 0 auto;
-}
 
 .portfolioImg {
   width: 300px;
@@ -108,7 +103,6 @@
   background: rgb(0, 155, 245);
   color: #fff;
   font-size: 25px;
-  font-weight: bold;
   margin-right: 10px;
   user-select: none;
   cursor: pointer;
@@ -121,7 +115,6 @@
   background: rgb(120, 2, 156);
   color: #fff;
   font-size: 25px;
-  font-weight: bold;
   margin-right: 10px;
   user-select: none;
   cursor: pointer;
@@ -134,7 +127,6 @@
   background: rgb(0, 245, 0);
   color: #fff;
   font-size: 25px;
-  font-weight: bold;
   margin-right: 10px;
   user-select: none;
   cursor: pointer;
@@ -147,8 +139,6 @@
   background: rgb(0, 0, 0);
   color: #fff;
   font-size: 25px;
-  font-weight: bold;
-  margin-right: 10px;
   user-select: none;
   cursor: pointer;
 }

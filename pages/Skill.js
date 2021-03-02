@@ -426,7 +426,7 @@ const Skill = () => {
     <Layout>
       {/* クリックで何ができるかを表示(hoverで表示でもいいかも、でも一覧で見たいからやっぱこれかな) */}
       {/* 情報量を増やす & 画像を大きくするため、3*3のタイルでもいいかも（適当に技術一個追加でｗ） */}
-      <h3>マークアップ言語</h3>
+      <h3 className={styles.title}>マークアップ言語</h3>
       <section className={styles.main}>
         <div className={styles.item} onClick={handleHtml}>
           <h2 className={utilStyles.headingSd}>HTML</h2>
@@ -445,7 +445,7 @@ const Skill = () => {
           {tailwindcss}
         </div>
       </section>
-      <h3>プログラミング言語、ライブラリ、フレームワーク</h3>
+      <h3 className={styles.title}>プログラミング言語、ライブラリ、フレームワーク</h3>
       <section className={styles.main}>
         <div className={styles.item} onClick={handleJavascript}>
           <h2 className={utilStyles.headingSd}>JavaScript</h2>
@@ -476,7 +476,7 @@ const Skill = () => {
           {express}
         </div>
       </section>
-      <h3>データベース</h3>
+      <h3 className={styles.title}>データベース</h3>
       <section className={styles.main}>
         <div className={styles.item} onClick={handleMysql}>
           <h2 className={utilStyles.headingSd}>MySQL</h2>
@@ -491,7 +491,7 @@ const Skill = () => {
           {firebase}
         </div>
       </section>
-      <h3>その他</h3>
+      <h3 className={styles.title}>その他</h3>
       <section className={styles.main}>
         <div className={styles.item} onClick={handleGit}>
           <h2 className={utilStyles.headingSd}>Git</h2>

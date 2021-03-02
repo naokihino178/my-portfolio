@@ -11,7 +11,10 @@ export default function Layout({ children }) {
     <div className={styles.bg}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"></link>
+        <link
+          href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          rel="stylesheet"
+        ></link>
         <meta
           name="description" // 検索した際にタイトルの下に説明文として表示
           content="Learn how to build a personal website using Next.js"
@@ -30,6 +33,7 @@ export default function Layout({ children }) {
           name="twitter:card" // Twitter上での表示タイプを指定するタグ
           content="summary_large_image"
         />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
       <header className={`${styles.header} ${utilStyles.headingSd}`}>
         {/* <div className={styles.headerLogoContainer}>
@@ -47,10 +51,7 @@ export default function Layout({ children }) {
             <a className={styles.nav}>スキル</a>
           </Link>
           <Link href="/Portfolio">
-            <a className={styles.nav}>製作物(オリジナル)</a>
-          </Link>
-          <Link href="/Portfolio">
-            <a className={styles.nav}>製作物(コピー)</a>
+            <a className={styles.nav}>製作物</a>
           </Link>
           <Link href="/Form">
             <a className={styles.nav}>お問い合わせ</a>
