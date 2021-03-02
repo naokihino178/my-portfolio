@@ -20,13 +20,20 @@ const Profile = () => {
           >
             {name}
           </p>
-          <a href="https://twitter.com/warabukki">
-            <button className={utilStyles.twitterButton}>t</button>
+          <a
+            href="https://twitter.com/warabukki"
+            className={utilStyles.twitterButton}
+          >
+            <i class="fab fa-twitter-square"></i>
           </a>
-          <button className={utilStyles.instagramButton}>I</button>
-          <button className={utilStyles.lineButton}>L</button>
-          <a href="https://github.com/naokihino178">
-            <button className={utilStyles.githubButton}>G</button>
+          <a className={utilStyles.lineButton}>
+            <i class="fab fa-line"></i>
+          </a>
+          <a
+            href="https://github.com/naokihino178"
+            className={utilStyles.githubButton}
+          >
+            <i class="fab fa-github-square"></i>
           </a>
         </div>
         <div className={styles.mainContainer}>
