@@ -7,11 +7,12 @@ const Profile = () => {
   const name = "日野　尚輝";
   return (
     <Layout>
+      <h3 className={styles.title}>プロフィール</h3>
       <section className={styles.top}>
         <div className={styles.subContainer}>
           <img
             src="/images/profile.jpg"
-            className={utilStyles.profileImg}
+            className={styles.profileImg}
             alt={name}
           />
           <p
@@ -19,20 +20,6 @@ const Profile = () => {
           >
             {name}
           </p>
-          <div>1995年</div>
-          <div>島根県で誕生</div>
-          <div>2018年</div>
-          <div>鳥取大学農学部卒業</div>
-          <div>2020年</div>
-          <div>
-            鳥取大学大学院
-            <br />
-            持続性社会創生化学研究科
-            <br />
-            農学専攻　修了
-          </div>
-          <div>2020年</div>
-          <div>神戸天然物化学株式会社　入社</div>
           <a href="https://twitter.com/warabukki">
             <button className={utilStyles.twitterButton}>t</button>
           </a>

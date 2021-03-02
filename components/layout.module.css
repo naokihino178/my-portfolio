@@ -1,3 +1,10 @@
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 896px) {
+}
+@media screen and (max-width: 480px) {
+}
+
 .bg {
   width: 100%;
   /* height: 100vh; */
@@ -8,7 +15,7 @@
 .container {
   max-width: 85rem;
   margin: 0 auto;
-  padding: 9em 1em 2em;
+  padding: 5em 1em 2em;
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
     Meiryo, "ＭＳ Ｐゴシック", sans-serif;
 }
@@ -72,6 +79,10 @@
   color: #000;
 }
 
+.title {
+  text-align: center;
+}
+
 /* メイン */
 /* Linkで飛ぶのとSSGで飛ぶのの違いはなんや、どうやって分けるんや */
 .mainContainer {
@@ -84,17 +95,26 @@
 
 .subContainer {
   width: 25%;
-  height: 600px;
+  height: 300px;
   padding: 20px 20px;
   position: fixed;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2);
   background: #ececec;
+  text-align: center;
 }
+
+.profileImg {
+  border-radius: 9999px;
+  width: 150px;
+  margin: 0 auto;
+}
+
 .main {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
   padding: 20px 20px;
+  margin-bottom: 50px;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2);
   background: #ececec;
   color: #000;
@@ -200,7 +220,7 @@
   color: inherit;
 
   /* 任意の高さ */
-  height: 90px;
+  height: 120px;
 
   /*inputのフォーカス時の枠線を消す*/
   outline: 0;
@@ -222,3 +242,75 @@
   border: 1px solid#e74c3c;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
 }
+
+
+/* 600px〜959px：タブレット
+------------------------------ */
+/* @media screen and (min-width: 480px) and (max-width: 959px) { */
+@media screen and (max-width: 959px) {
+  .top {
+    flex-direction: column;
+  }
+
+  .mainContainer {
+    width: 100%;
+    padding: 20px 20px;
+    margin-left: 0;
+  }
+
+  .subContainer {
+    width: 100%;
+    height: 350px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    position: static;
+    font-size: 15px;
+  }
+
+  .profileImg {
+    border-radius: 9999px;
+    width: 200px;
+  }
+
+  .headerNavContainer {
+    width: 420px;
+    font-size: 15px;
+  }
+
+  .item2 {
+    height: 600px;
+    margin: 20px 0;
+    padding: 15px 0px;
+    user-select: none;
+    cursor: pointer;
+    text-align-last: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .portfolioDesc {
+    width: 80%;
+  }
+  
+  .item {
+    width: 180px;
+    height: 180px;
+  }  
+  
+}
+
+/* /* 〜479px：スマートフォン縦
+------------------------------ */
+/* @media screen and (max-width: 479px) {
+  .subContainer {
+    width: 100%;
+    height: 350px;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    position: static;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+  } */
+
+/* } */ 

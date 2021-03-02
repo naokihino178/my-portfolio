@@ -48,6 +48,7 @@ const Form = () => {
 
   return (
     <Layout>
+      <h3 className={styles.title}>お問い合わせ</h3>
       <section className={styles.main}>
         <div className={utilStyles.headingSd}>
           <form onSubmit={handleSubmit}>
@@ -83,7 +84,7 @@ const Form = () => {
             <span className={utilStyles.error}>{emailErrorText}</span>
             <p className={utilStyles.fontWeightBold}>お問い合わせ内容</p>
             <textarea
-              cols="40"
+              cols="35"
               rows="5"
               value={content}
               onChange={(e) => {

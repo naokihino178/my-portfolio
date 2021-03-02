@@ -9,6 +9,7 @@ import Layout from "../components/layout";
 const Portfolio = () => {
   return (
     <Layout>
+      <h3 className={styles.title}>オリジナルアプリ</h3>
       <section className={styles.main}>
         <Link href="https://next-js-tutorial.naokihino178.vercel.app">
           <button className={styles.item2}>
@@ -34,7 +35,9 @@ const Portfolio = () => {
           <button className={styles.item2}>
             <div className={styles.portfolioDesc}>
               <h2 className={utilStyles.headingLg}>クイズアプリ</h2>
-              <p className={utilStyles.headingMd}>(React, Material-UI, Firebase)</p>
+              <p className={utilStyles.headingMd}>
+                (React, Material-UI, Firebase)
+              </p>
               <ul>
                 <li>Material UIを用いてモダンなUIを実現しています。</li>
                 <li>
@@ -53,7 +56,9 @@ const Portfolio = () => {
           <button className={styles.item2}>
             <div className={styles.portfolioDesc}>
               <h2 className={utilStyles.headingLg}>節約レシピ管理アプリ</h2>
-              <p className={utilStyles.headingMd}>(EJS, Express, MySQL, CircleCI, Heroku)</p>
+              <p className={utilStyles.headingMd}>
+                (EJS, Express, MySQL, CircleCI, Heroku)
+              </p>
               <ul>
                 <li>節約レシピを管理するアプリです。</li>
                 <li>
@@ -71,6 +76,9 @@ const Portfolio = () => {
             />
           </button>
         </Link>
+      </section>
+      <h3 className={styles.title}>コピーアプリ</h3>
+      <section className={styles.main}>
         <Link href="/blog">
           <button className={styles.item2}>
             <div className={styles.portfolioDesc}>
