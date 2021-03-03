@@ -3,7 +3,7 @@ import styles from "./layout.module.css"; // stylesという名前でlayout.modu
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
-export const siteTitle = "ここはsiteTitle、コンポーネントごとに変えれるよ";
+export const siteTitle = "ポートフォリオ";
 
 export default function Layout({ children }) {
   // childrenはラップ要素、homeはトップページを表示？？
