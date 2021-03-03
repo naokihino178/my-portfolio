@@ -6,13 +6,13 @@ import Layout from "../components/layout";
 const Skill = () => {
   // 変数
   const imgHtml = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/html-5.svg" />
     </div>
   );
 
   const descHtml = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>基本的にBEM記法を使うようにしています。</li>
     </ul>
   );
@@ -32,25 +32,25 @@ const Skill = () => {
   // }
 
   const imgCss = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/css-3.svg" />
     </div>
   );
 
   const descCss = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>transitionやanimationを使った動きをつけることができます。</li>
       <li>疑似要素</li>
     </ul>
   );
 
   const imgSass = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/sass.svg" />
     </div>
   );
   const descSass = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>
         メディアクエリを使用して、レスポンシブデザインを実装することができます。
       </li>
@@ -58,51 +58,51 @@ const Skill = () => {
   );
 
   const imgTailwindcss = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/tailwindcss.svg" />
     </div>
   );
 
   const descTailwindcss = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>チートシートを見ながらであれば基本的なことはできます。</li>
     </ul>
   );
 
   const imgJavascript = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/javascript.svg" />
     </div>
   );
 
   const descJavascript = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>アロー関数やモジュールなど、ES6に則った開発ができます。</li>
       <li>非同期処理</li>
     </ul>
   );
 
   const imgTypescript = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/typescript.svg" />
     </div>
   );
 
   const descTypescript = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>型付けに則った、無駄のない開発ができます。</li>
       <li>JSで書かれたコードをTSに書き換えることができます。</li>
     </ul>
   );
 
   const imgReact = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/react.svg" />
     </div>
   );
 
   const descReact = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>React Hooksを問題なく使用できます。</li>
       <li>class構文をHooksを使って書き換えることもできます。</li>
       <li>React Router</li>
@@ -110,121 +110,121 @@ const Skill = () => {
   );
 
   const imgRedux = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/redux.svg" />
     </div>
   );
 
   const descRedux = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>Redux Toolkitを用いてモダンなglobal state管理ができます。</li>
     </ul>
   );
 
   const imgNextjs = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/nextjs.svg" />
     </div>
   );
 
   const descNextjs = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>SSG、SSR、CSRを適切に使い分けることができます。</li>
       <li>Dynamic Routeを問題なく使うことができます。</li>
     </ul>
   );
 
   const imgNodejs = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/nodejs.svg" />
     </div>
   );
 
   const descNodejs = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>HTTPメソッド</li>
     </ul>
   );
   const imgExpress = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/express.svg" />
     </div>
   );
 
   const descExpress = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>REST APIを設計し、APIサーバーを立てることができます。</li>
     </ul>
   );
 
   const imgMysql = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/mysql.svg" />
     </div>
   );
 
   const descMysql = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>Authenticationを使った認証機能の実装ができます。</li>
       <li>Cloud Firestoreを使ったデータベースの操作ができます。</li>
     </ul>
   );
   const imgSqlite = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/sqlite.svg" />
     </div>
   );
 
   const descSqlite = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>Authenticationを使った認証機能の実装ができます。</li>
       <li>Cloud Firestoreを使ったデータベースの操作ができます。</li>
     </ul>
   );
   const imgFirebase = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/firebase.svg" />
     </div>
   );
 
   const descFirebase = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>Authenticationを使った認証機能の実装ができます。</li>
       <li>Cloud Firestoreを使ったデータベースの操作ができます。</li>
     </ul>
   );
   const imgGit = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/git.svg" />
     </div>
   );
 
   const descGit = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>Authenticationを使った認証機能の実装ができます。</li>
       <li>Cloud Firestoreを使ったデータベースの操作ができます。</li>
     </ul>
   );
   const imgGithub = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/github.svg" />
     </div>
   );
 
   const descGithub = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>Authenticationを使った認証機能の実装ができます。</li>
       <li>Cloud Firestoreを使ったデータベースの操作ができます。</li>
     </ul>
   );
   const imgPostman = (
-    <div className={styles.img}>
+    <div className={styles.skillImg}>
       <img src="/images/postman.svg" />
     </div>
   );
 
   const descPostman = (
-    <ul className={styles.desc}>
+    <ul className={styles.skillDesc}>
       <li>Authenticationを使った認証機能の実装ができます。</li>
       <li>Cloud Firestoreを使ったデータベースの操作ができます。</li>
     </ul>
@@ -428,80 +428,80 @@ const Skill = () => {
       {/* 情報量を増やす & 画像を大きくするため、3*3のタイルでもいいかも（適当に技術一個追加でｗ） */}
       <h3 className={styles.title}>マークアップ言語</h3>
       <section className={styles.main}>
-        <div className={styles.item} onClick={handleHtml}>
+        <div className={styles.skillItem} onClick={handleHtml}>
           <h2 className={utilStyles.headingSd}>HTML</h2>
           {html}
         </div>
-        <div className={styles.item} onClick={handleCss}>
+        <div className={styles.skillItem} onClick={handleCss}>
           <h2 className={utilStyles.headingSd}>CSS</h2>
           {css}
         </div>
-        <div className={styles.item} onClick={handleSass}>
+        <div className={styles.skillItem} onClick={handleSass}>
           <h2 className={utilStyles.headingSd}>Sass</h2>
           {sass}
         </div>
-        <div className={styles.item} onClick={handleTailwindcss}>
+        <div className={styles.skillItem} onClick={handleTailwindcss}>
           <h2 className={utilStyles.headingSd}>Tailwind CSS</h2>
           {tailwindcss}
         </div>
       </section>
       <h3 className={styles.title}>プログラミング言語、ライブラリ、フレームワーク</h3>
       <section className={styles.main}>
-        <div className={styles.item} onClick={handleJavascript}>
+        <div className={styles.skillItem} onClick={handleJavascript}>
           <h2 className={utilStyles.headingSd}>JavaScript</h2>
           {javascript}
         </div>
-        <div className={styles.item} onClick={handleTypescript}>
+        <div className={styles.skillItem} onClick={handleTypescript}>
           <h2 className={utilStyles.headingSd}>TypeScript</h2>
           {typescript}
         </div>
-        <div className={styles.item} onClick={handleReact}>
+        <div className={styles.skillItem} onClick={handleReact}>
           <h2 className={utilStyles.headingSd}>React</h2>
           {react}
         </div>
-        <div className={styles.item} onClick={handleRedux}>
+        <div className={styles.skillItem} onClick={handleRedux}>
           <h2 className={utilStyles.headingSd}>Redux</h2>
           {redux}
         </div>
-        <div className={styles.item} onClick={handleNextjs}>
+        <div className={styles.skillItem} onClick={handleNextjs}>
           <h2 className={utilStyles.headingSd}>Next.js</h2>
           {nextjs}
         </div>
-        <div className={styles.item} onClick={handleNodejs}>
+        <div className={styles.skillItem} onClick={handleNodejs}>
           <h2 className={utilStyles.headingSd}>node.js</h2>
           {nodejs}
         </div>
-        <div className={styles.item} onClick={handleExpress}>
+        <div className={styles.skillItem} onClick={handleExpress}>
           <h2 className={utilStyles.headingSd}>Express</h2>
           {express}
         </div>
       </section>
       <h3 className={styles.title}>データベース</h3>
       <section className={styles.main}>
-        <div className={styles.item} onClick={handleMysql}>
+        <div className={styles.skillItem} onClick={handleMysql}>
           <h2 className={utilStyles.headingSd}>MySQL</h2>
           {mysql}
         </div>
-        <div className={styles.item} onClick={handleSqlite}>
+        <div className={styles.skillItem} onClick={handleSqlite}>
           <h2 className={utilStyles.headingSd}>sqlite</h2>
           {sqlite}
         </div>
-        <div className={styles.item} onClick={handleFirebase}>
+        <div className={styles.skillItem} onClick={handleFirebase}>
           <h2 className={utilStyles.headingSd}>Firebase</h2>
           {firebase}
         </div>
       </section>
       <h3 className={styles.title}>その他</h3>
       <section className={styles.main}>
-        <div className={styles.item} onClick={handleGit}>
+        <div className={styles.skillItem} onClick={handleGit}>
           <h2 className={utilStyles.headingSd}>Git</h2>
           {git}
         </div>
-        <div className={styles.item} onClick={handleGithub}>
+        <div className={styles.skillItem} onClick={handleGithub}>
           <h2 className={utilStyles.headingSd}>GitHub</h2>
           {github}
         </div>
-        <div className={styles.item} onClick={handlePostman}>
+        <div className={styles.skillItem} onClick={handlePostman}>
           <h2 className={utilStyles.headingSd}>Postman</h2>
           {postman}
         </div>

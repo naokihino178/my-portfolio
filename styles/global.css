@@ -44,5 +44,5 @@ ul li:before {
   content: "\f138"; /*アイコンの種類*/
   position: absolute;
   left: 1em; /*左端からのアイコンまでの距離*/
-  color: #dd7d3d; /*アイコン色*/
+  color: #005b6b; /*アイコン色*/
 }
