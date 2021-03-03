@@ -45,20 +45,20 @@ export default function Layout({ children }) {
         </div> */}
         <div className={styles.headerNavContainer}>
           <Link href="/">
-            <a className={styles.nav}>プロフィール</a>
+            <a className={styles.headerNav}>プロフィール</a>
           </Link>
           <Link href="/Skill">
-            <a className={styles.nav}>スキル</a>
+            <a className={styles.headerNav}>スキル</a>
           </Link>
           <Link href="/Portfolio">
-            <a className={styles.nav}>製作物</a>
+            <a className={styles.headerNav}>製作物</a>
           </Link>
-          <Link href="/Form">
-            <a className={styles.nav}>お問い合わせ</a>
+          <Link href="/Contact">
+            <a className={styles.headerNav}>お問い合わせ</a>
           </Link>
         </div>
       </header>
-      <div className={styles.container}>
+      <div className={styles.allContainer}>
         <div>
           {/* ここでやっとindex.jsのLayoutで囲まれた部分が表示 */}
           <main>{children}</main>

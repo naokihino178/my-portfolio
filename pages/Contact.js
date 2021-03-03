@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import styles from "../components/layout.module.css";
 
-const Form = () => {
+const Contact = () => {
   const [name, setName] = useState("");
   const [tel, setTel] = useState("");
   const [email, setEmail] = useState("");
@@ -104,4 +104,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default Contact;

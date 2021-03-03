@@ -12,7 +12,7 @@ const Portfolio = () => {
       <h3 className={styles.title}>オリジナルアプリ</h3>
       <section className={styles.main}>
         <Link href="https://next-js-tutorial.naokihino178.vercel.app">
-          <button className={styles.item2}>
+          <button className={styles.portfolioItem}>
             <div className={styles.portfolioDesc}>
               <h2 className={utilStyles.headingLg}>ブログ</h2>
               <p className={utilStyles.headingMd}>(Next.js, TypeScript)</p>
@@ -31,8 +31,8 @@ const Portfolio = () => {
             />
           </button>
         </Link>
-        <Link href="/KakeiboApp">
-          <button className={styles.item2}>
+        <Link href="https://quizapp-taupe.vercel.app/">
+          <button className={styles.portfolioItem}>
             <div className={styles.portfolioDesc}>
               <h2 className={utilStyles.headingLg}>クイズアプリ</h2>
               <p className={utilStyles.headingMd}>
@@ -53,7 +53,7 @@ const Portfolio = () => {
           </button>
         </Link>
         <Link href="https://orenosetsuyakumeshi.herokuapp.com/">
-          <button className={styles.item2}>
+          <button className={styles.portfolioItem}>
             <div className={styles.portfolioDesc}>
               <h2 className={utilStyles.headingLg}>節約レシピ管理アプリ</h2>
               <p className={utilStyles.headingMd}>
@@ -80,7 +80,7 @@ const Portfolio = () => {
       <h3 className={styles.title}>コピーアプリ</h3>
       <section className={styles.main}>
         <Link href="/blog">
-          <button className={styles.item2}>
+          <button className={styles.portfolioItem}>
             <div className={styles.portfolioDesc}>
               <h2 className={utilStyles.headingLg}>Todo管理アプリ</h2>
               <p className={utilStyles.headingMd}>

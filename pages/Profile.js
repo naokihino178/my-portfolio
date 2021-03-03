@@ -4,21 +4,20 @@ import Link from "next/link";
 import Layout from "../components/layout";
 
 const Profile = () => {
-  const name = "日野　尚輝";
   return (
     <Layout>
       <h3 className={styles.title}>プロフィール</h3>
-      <section className={styles.top}>
-        <div className={styles.subContainer}>
+      <section className={styles.profileContainer}>
+        <div className={styles.profileSubContainer}>
           <img
             src="/images/profile.jpg"
             className={styles.profileImg}
-            alt={name}
+            alt="profileImg"
           />
           <p
-            className={`${utilStyles.fontWeightBold} ${utilStyles.headingMd} ${utilStyles.textAlignCenter}`}
+            className={`${utilStyles.headingSd} ${utilStyles.textAlignCenter}`}
           >
-            {name}
+            日野　尚輝
           </p>
           <a
             href="https://twitter.com/warabukki"
@@ -36,7 +35,7 @@ const Profile = () => {
             <i class="fab fa-github-square"></i>
           </a>
         </div>
-        <div className={styles.mainContainer}>
+        <div className={styles.profileMainContainer}>
           <h2 className={utilStyles.outline}>現職について</h2>
           <p>有機合成品の受託開発を行う会社で品質管理の仕事をしています。</p>
           <p>

@@ -10,7 +10,7 @@ import styles from '../components/layout.module.css' // stylesという名前で
 import Profile from './Profile'
 import Skill from './Skill'
 import Portfolio from './Portfolio'
-import Form from './Form'
+import Contact from './Contact'
 
 // getStaticPropsはpageコンポーネントでのみ使用可能
 // getStaticPropを使っているということは、Next.jsに、「このページはデータの依存関係を持っている。
