@@ -11,34 +11,15 @@ const Portfolio = () => {
     <Layout>
       <h3 className={styles.title}>オリジナルアプリ</h3>
       <section className={styles.main}>
-        <Link href="https://next-js-tutorial.naokihino178.vercel.app">
-          <button className={styles.portfolioItem}>
-            <div className={styles.portfolioDesc}>
-              <h2 className={utilStyles.headingLg}>ブログ</h2>
-              <p className={utilStyles.headingMd}>(Next.js, TypeScript)</p>
-              <ul>
-                <li>自らの学習の進捗をまとめたブログです。</li>
-                <li>
-                  以前LINEノートで行っていた週間目標を記入し、その達成状況を一週間ごとに振り返っています。
-                </li>
-                <li>自らの学習進捗を確認できるため、大いに役立ちました。</li>
-              </ul>
-            </div>
-            <img
-              src="/images/blogApp.jpeg"
-              className={utilStyles.portfolioImg}
-              // alt={name}
-            />
-          </button>
-        </Link>
         <Link href="https://quizapp-taupe.vercel.app/">
           <button className={styles.portfolioItem}>
             <div className={styles.portfolioDesc}>
               <h2 className={utilStyles.headingLg}>クイズアプリ</h2>
               <p className={utilStyles.headingMd}>
-                (React, Material-UI, Firebase)
+                (React, TypeScript, Material-UI, Firebase)
               </p>
               <ul>
+                <li>日々の学習のため、シンプルで使い勝手の良いクイズアプリを作りました。</li>
                 <li>Material UIを用いてモダンなUIを実現しています。</li>
                 <li>
                   某テレビ番組を参考に、回答を絞る機能などを実装してみました。
@@ -47,6 +28,30 @@ const Portfolio = () => {
             </div>
             <img
               src="/images/quizApp.jpeg"
+              className={utilStyles.portfolioImg}
+              // alt={name}
+            />
+          </button>
+        </Link>
+        <Link href="https://composition-app.vercel.app">
+          <button className={styles.portfolioItem}>
+            <div className={styles.portfolioDesc}>
+              <h2 className={utilStyles.headingLg}>作曲アプリ</h2>
+              <p className={utilStyles.headingMd}>(React, TypeScript)</p>
+              <ul>
+                <li>
+                  趣味の作曲を効率化できないかと考え、作成したアプリです。
+                </li>
+                <li>
+                  曲のキーを入力すると、ダイアトニックコードおよびよく使われるコード進行の一覧が表示されます。
+                </li>
+                <li>
+                  趣味の作曲のスピードが上がりました。また、自分の趣味とプログラミングが繋がった実感があり、とても嬉しかったです。
+                </li>
+              </ul>
+            </div>
+            <img
+              src="/images/compositionApp.jpeg"
               className={utilStyles.portfolioImg}
               // alt={name}
             />
