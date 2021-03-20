@@ -17,15 +17,16 @@ const Profile = () => {
           <p
             className={`${utilStyles.headingSd} ${utilStyles.textAlignCenter}`}
           >
-            日野　尚輝
+            hino
           </p>
           <a
-            href="https://twitter.com/warabukki"
+            href="https://twitter.com/n__hino"
             className={utilStyles.twitterButton}
           >
             <i class="fab fa-twitter-square"></i>
           </a>
-          <a className={utilStyles.lineButton}>
+          <a href="https://line.me/ti/p/lI2wMbweX1" 
+          className={utilStyles.lineButton}>
             <i class="fab fa-line"></i>
           </a>
           <a
