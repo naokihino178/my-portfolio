@@ -5,8 +5,8 @@ import Layout from "../components/layout";
 import { useState } from "react";
 
 const Profile = () => {
-  const [openSkillSection, setOpenSkillSection] = useState(false);
-  const [openPortfolioSection, setOpenPortfolioSection] = useState(false);
+  const [openSkillSection, setOpenSkillSection] = useState(true);
+  const [openPortfolioSection, setOpenPortfolioSection] = useState(true);
   return (
     <Layout>
       <section className={styles.profileContainer}>
@@ -16,16 +16,14 @@ const Profile = () => {
             className={styles.profileImg}
             alt="profileImg"
           />
-          <p
-            className={`${utilStyles.headingMd} ${utilStyles.textAlignCenter}`}
-          >
-            hino
-          </p>
-          <p
-            className={`${utilStyles.headingSd} ${utilStyles.textAlignCenter}`}
-          ></p>
+          <p className={utilStyles.headingMd}>hino</p>
           <p>
-            Email:（<a>naoki.hino178@gmail.com</a>
+            フロントエンドエンジニアを
+            <br />
+            目指しています。
+          </p>
+          <p>
+            Email: <a>naoki.hino178@gmail.com</a>
           </p>
           <a
             href="https://twitter.com/n__hino"
@@ -75,7 +73,9 @@ const Profile = () => {
                   </div>
                 </div>
               </section>
-              <p>プログラミング言語: JavaScript, TypeScript</p>
+              <p className={utilStyles.headingSd}>
+                プログラミング言語: JavaScript, TypeScript
+              </p>
               <section className={styles.main}>
                 <div className={styles.skillItem}>
                   <div className={styles.skillImg}>
