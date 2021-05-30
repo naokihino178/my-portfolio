@@ -59,7 +59,7 @@
 
 .profileSubContainer {
   width: 25%;
-  height: 320px;
+  height: 400px;
   padding: 20px 20px;
   position: fixed;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2);
@@ -108,7 +108,7 @@
   height: 300px;
   margin: 20px 0;
   padding: 15px 50px;
-  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
   border: none;
   user-select: none;
   cursor: pointer;
@@ -122,46 +122,11 @@
   width: 70%;
 }
 
-/* お問い合わせ */
-.nameInput,
-.telInput,
-.mailInput {
-  background-color: #eee;
-  border: 1px solid #000;
-  transition: border 0.2s ease-out;
-  color: inherit;
-  height: 45px;
-  outline: 0;
-  font-size: 20px;
-  border-radius: 3px;
-  margin-bottom: 10px;
-}
-
-.contactInput {
-  background-color: #eee;
-  border: 1px solid #000;
-  transition: border 0.2s ease-out;
-  color: inherit;
-  height: 120px;
-  outline: 0;
-  resize: none;
-  font-size: 20px;
-  border-radius: 4px;
-  margin-bottom: 20px;
-}
-
-.nameInput:focus,
-.telInput:focus,
-.mailInput:focus,
-.contactInput:focus {
-  border: 1px solid#e74c3c;
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
-}
-
 /* 600px〜959px：タブレット
 ------------------------------ */
 /* @media screen and (min-width: 480px) and (max-width: 959px) { */
-@media screen and (max-width: 959px) {
+/* @media screen and (max-width: 959px) { */
+@media screen and (max-width: 1100px) {
   .profileContainer {
     flex-direction: column;
   }
@@ -174,7 +139,7 @@
 
   .profileSubContainer {
     width: 100%;
-    height: 350px;
+    height: 420px;
     padding: 20px 20px;
     margin-bottom: 20px;
     position: static;
@@ -192,7 +157,7 @@
   }
 
   .portfolioItem {
-    height: 600px;
+    height: 480px;
     margin: 20px 0;
     padding: 15px 0px;
     user-select: none;
@@ -228,4 +193,3 @@
     width: 220px;
   }
 }
-
