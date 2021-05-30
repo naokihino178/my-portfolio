@@ -6,11 +6,7 @@ import { getSortedPostsData } from '../lib/posts'
 // import Link from 'next/link'
 import Link from 'next/link'
 import styles from '../components/layout.module.css' // stylesという名前でlayout.module.cssからインポート
-
 import Profile from './Profile'
-import Skill from './Skill'
-import Portfolio from './Portfolio'
-import Contact from './Contact'
 
 // getStaticPropsはpageコンポーネントでのみ使用可能
 // getStaticPropを使っているということは、Next.jsに、「このページはデータの依存関係を持っている。
