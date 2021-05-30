@@ -6,7 +6,6 @@ import Layout from "../components/layout";
 const Profile = () => {
   return (
     <Layout>
-      <h3 className={styles.title}>プロフィール</h3>
       <section className={styles.profileContainer}>
         <div className={styles.profileSubContainer}>
           <img
@@ -25,8 +24,10 @@ const Profile = () => {
           >
             <i class="fab fa-twitter-square"></i>
           </a>
-          <a href="https://line.me/ti/p/lI2wMbweX1" 
-          className={utilStyles.lineButton}>
+          <a
+            href="https://line.me/ti/p/lI2wMbweX1"
+            className={utilStyles.lineButton}
+          >
             <i class="fab fa-line"></i>
           </a>
           <a
@@ -37,53 +38,175 @@ const Profile = () => {
           </a>
         </div>
         <div className={styles.profileMainContainer}>
-          <h2 className={utilStyles.outline}>現職について</h2>
-          <p>有機合成品の受託開発を行う会社で品質管理の仕事をしています。</p>
-          <p>
-            自社で製造した製品を、様々な装置（LC, GC, ICP-MS,
-            KF水分計など）を用いて分析しています。
-          </p>
-          <h2 className={utilStyles.outline}>アピールポイント</h2>
-          <ul>
-            <li className={utilStyles.fontWeightBold}>
-              高い自己肯定感、自己効力感
-            </li>
-            <p>
-              今までの人生で「小さな成功体験」を積み重ねることで、自分に自信を持つことができるようになりました。
-            </p>
-            <li className={utilStyles.fontWeightBold}>
-              プログラミング学習に対するモチベーション
-            </li>
-            <p>
-              自分は紛れもなく「楽しいから」プログラミングに取り組んでいます。その理由は「常に勉強をし続けること」「自分が書いたコードが形になること」です。この2つは今後揺らぐことはないと確信しています。
-            </p>
-            <li className={utilStyles.fontWeightBold}>
-              何でも「とりあえずやってみよう」というチャレンジ精神
-            </li>
-            <p>
-              興味のある事はとりあえずやってみるということを心がけていました。（プログラミング、バンド活動、投資、釣り、麻雀、ルービックキューブなど）
-              <br />
-              最終的に残っているのがギターおよびプログラミングです。
-            </p>
-            <li className={utilStyles.fontWeightBold}>
-              問題に対しての解決策を考え、実行する能力
-            </li>
-            <p>この力が身に付いたのは大学院での研究活動だと確信しています。</p>
-          </ul>
-          <h2 className={utilStyles.outline}>趣味</h2>
-          <ul>
-            <li className={utilStyles.fontWeightBold}>エレキギター</li>
-            <li className={utilStyles.fontWeightBold}>音楽鑑賞</li>
-            <li className={utilStyles.fontWeightBold}>楽曲制作</li>
-          </ul>
-          <h2 className={utilStyles.outline}>資格</h2>
-          <ul>
-            <li className={utilStyles.fontWeightBold}>普通自動車運転免許</li>
-            <li className={utilStyles.fontWeightBold}>普通自動二輪運転免許</li>
-            <li className={utilStyles.fontWeightBold}>
-              TOEIC Listening & Reading TEST 740点
-            </li>
-          </ul>
+          <h2 className={utilStyles.outline}>スキル</h2>
+          <p>マークアップ言語: HTML, CSS, Sass</p>
+          <section className={styles.main}>
+            <div className={styles.skillItem}>
+              <div className={styles.skillImg}>
+                <img src="/images/html-5.svg" />
+              </div>
+            </div>
+            <div className={styles.skillItem}>
+              <div className={styles.skillImg}>
+                <img src="/images/css-3.svg" />
+              </div>
+            </div>
+            <div className={styles.skillItem}>
+              <div className={styles.skillImg}>
+                <img src="/images/sass.svg" />
+              </div>
+            </div>
+          </section>
+          <p>プログラミング言語: JavaScript, TypeScript</p>
+          <section className={styles.main}>
+            <div className={styles.skillItem}>
+              <div className={styles.skillImg}>
+                <img src="/images/javascript.svg" />
+              </div>
+            </div>
+            <div className={styles.skillItem}>
+              <div className={styles.skillImg}>
+                <img src="/images/typescript.svg" />
+              </div>
+            </div>
+          </section>
+          <p>ライブラリ、フレームワーク: React, Redux, Next.js, Express</p>
+          <section className={styles.main}>
+            <div className={styles.skillItem}>
+              <div className={styles.skillImg}>
+                <img src="/images/react.svg" />
+              </div>
+            </div>
+            <div className={styles.skillItem}>
+              <div className={styles.skillImg}>
+                <img src="/images/redux.svg" />
+              </div>
+            </div>
+            <div className={styles.skillItem}>
+              <div className={styles.skillImg}>
+                <img src="/images/nextjs.svg" />
+              </div>
+            </div>
+            <div className={styles.skillItem}>
+              <div className={styles.skillImg}>
+                <img src="/images/express.svg" />
+              </div>
+            </div>
+          </section>
+          <p>データベース: MySQL, Firebase(Cloud Firestore)</p>
+          <section className={styles.main}>
+            <div className={styles.skillItem}>
+              <div className={styles.skillImg}>
+                <img src="/images/mysql.svg" />
+              </div>
+            </div>
+            <div className={styles.skillItem}>
+              <div className={styles.skillImg}>
+                <img src="/images/firebase.svg" />
+              </div>
+            </div>
+          </section>
+          <p>その他: Firebase(Authentication, Storage), Git, GitHub, Postman</p>
+          <section className={styles.main}>
+            <div className={styles.skillItem}>
+              <div className={styles.skillImg}>
+                <img src="/images/firebase.svg" />
+              </div>
+            </div>
+            <div className={styles.skillItem}>
+              <div className={styles.skillImg}>
+                <img src="/images/git.svg" />
+              </div>
+            </div>
+            <div className={styles.skillItem}>
+              <div className={styles.skillImg}>
+                <img src="/images/github.svg" />
+              </div>
+            </div>
+            <div className={styles.skillItem}>
+              <div className={styles.skillImg}>
+                <img src="/images/postman.svg" />
+              </div>
+            </div>
+          </section>
+          <h2 className={utilStyles.outline}>製作物</h2>
+          <section className={styles.main}>
+            <Link href="https://quizapp-taupe.vercel.app/">
+              <button className={styles.portfolioItem}>
+                <div className={styles.portfolioDesc}>
+                  <h2 className={utilStyles.headingLg}>クイズアプリ</h2>
+                  <p className={utilStyles.headingMd}>
+                    (React, TypeScript, Material-UI, Firebase)
+                  </p>
+                  <ul>
+                    <li>
+                      日々の学習のため、シンプルで使い勝手の良いクイズアプリを作りました。
+                    </li>
+                    <li>Material UIを用いてモダンなUIを実現しています。</li>
+                    <li>
+                      某テレビ番組を参考に、回答を絞る機能などを実装してみました。
+                    </li>
+                  </ul>
+                </div>
+                <img
+                  src="/images/quizApp.jpeg"
+                  className={utilStyles.portfolioImg}
+                  // alt={name}
+                />
+              </button>
+            </Link>
+            <Link href="https://composition-app.vercel.app">
+              <button className={styles.portfolioItem}>
+                <div className={styles.portfolioDesc}>
+                  <h2 className={utilStyles.headingLg}>作曲アプリ</h2>
+                  <p className={utilStyles.headingMd}>(React, TypeScript)</p>
+                  <ul>
+                    <li>
+                      趣味の作曲を効率化できないかと考え、作成したアプリです。
+                    </li>
+                    <li>
+                      曲のキーを入力すると、ダイアトニックコードおよびよく使われるコード進行の一覧が表示されます。
+                    </li>
+                    <li>
+                      趣味の作曲のスピードが上がりました。また、自分の趣味とプログラミングが繋がった実感があり、とても嬉しかったです。
+                    </li>
+                  </ul>
+                </div>
+                <img
+                  src="/images/compositionApp.jpeg"
+                  className={utilStyles.portfolioImg}
+                  // alt={name}
+                />
+              </button>
+            </Link>
+            <Link href="https://orenosetsuyakumeshi.herokuapp.com/">
+              <button className={styles.portfolioItem}>
+                <div className={styles.portfolioDesc}>
+                  <h2 className={utilStyles.headingLg}>節約レシピ管理アプリ</h2>
+                  <p className={utilStyles.headingMd}>
+                    (EJS, Express, MySQL, CircleCI, Heroku)
+                  </p>
+                  <ul>
+                    <li>節約レシピを管理するアプリです。</li>
+                    <li>
+                      私が7年間の一人暮らしで開発した節約レシピをぜひご覧ください。
+                    </li>
+                    <li>
+                      調理工程を入力しやすくするため、一工程ずつインプットフォームを作成しました。
+                    </li>
+                  </ul>
+                </div>
+                <img
+                  src="/images/recipeApp.jpeg"
+                  className={utilStyles.portfolioImg}
+                  // alt={name}
+                />
+              </button>
+            </Link>
+          </section>
+          <h2 className={utilStyles.outline}>お問い合わせ</h2>
+          Email（<a>naoki.hino178@gmail.com</a>） または
+          TwitterのDMでよろしくお願いします。
         </div>
       </section>
     </Layout>
