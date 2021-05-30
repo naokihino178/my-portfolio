@@ -124,3 +124,8 @@
   border-top: solid 3px #005b6b; /*上線*/
   border-bottom: solid 3px #005b6b; /*下線*/
 }
+
+.outline:hover {
+  user-select: none;
+  cursor: pointer;
+}
