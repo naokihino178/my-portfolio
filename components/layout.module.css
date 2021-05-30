@@ -42,6 +42,7 @@
 /* Linkで飛ぶのとSSGで飛ぶのの違いはなんや、どうやって分けるんや */
 
 .allContainer {
+  min-height: 100vh;
   max-width: 85rem;
   margin: 0 auto;
   padding: 3em 1em;
