@@ -247,7 +247,7 @@ const Profile = () => {
                       </ul>
                     </div>
                     <img
-                      src="/images/compositionApp.jpeg"
+                      // src="/images/compositionApp.jpeg"
                       className={utilStyles.portfolioImg}
                       alt="作曲補助アプリ"
                     />
