@@ -164,26 +164,25 @@ const Profile = () => {
           {openPortfolioSection ? (
             <>
               <section className={styles.main}>
-                <Link href="https://orenosetsuyakumeshi.herokuapp.com/">
+                <Link href="https://ranking-app-naokihino178.vercel.app/">
                   <button className={styles.portfolioItem}>
                     <div className={styles.portfolioDesc}>
-                      <h2 className={utilStyles.headingMd}>レシピ管理アプリ</h2>
+                      <h2 className={utilStyles.headingMd}>
+                        ランキング投稿アプリ
+                      </h2>
                       <p className={utilStyles.headingSd}>
-                        (JavaScript(EJS), Express, MySQL, CircleCI, Heroku)
+                        (React, TypeScript, Redux, Firebase(Authentication,
+                        Cloud Firestore, Storage))
                       </p>
                       <ul>
-                        <li>
-                          レシピを作成、編集、削除することができるアプリです。
-                        </li>
-                        <li>
-                          調理工程を一工程ずつインプットフォームに入力できるようにしています。
-                        </li>
+                        <li>ランキングを投稿するアプリです</li>
+                        <li>ユーザー情報の状態をReduxで管理しています。</li>
                       </ul>
                     </div>
                     <img
-                      src="/images/recipeApp.jpeg"
+                      src="/images/rankingApp.jpeg"
                       className={utilStyles.portfolioImg}
-                      alt="レシピ管理アプリ"
+                      alt="作曲補助アプリ"
                     />
                   </button>
                 </Link>
@@ -231,25 +230,26 @@ const Profile = () => {
                     />
                   </button>
                 </Link>
-                <Link href="">
+                <Link href="https://orenosetsuyakumeshi.herokuapp.com/">
                   <button className={styles.portfolioItem}>
                     <div className={styles.portfolioDesc}>
-                      <h2 className={utilStyles.headingMd}>
-                        ランキング投稿アプリ
-                      </h2>
+                      <h2 className={utilStyles.headingMd}>レシピ管理アプリ</h2>
                       <p className={utilStyles.headingSd}>
-                        (React, TypeScript, Redux, Firebase(Authentication,
-                        Cloud Firestore, Storage))
+                        (JavaScript(EJS), Express, MySQL, CircleCI, Heroku)
                       </p>
                       <ul>
-                        <li>ランキングを投稿するアプリです</li>
-                        <li>ユーザー情報の状態をReduxで管理しています。</li>
+                        <li>
+                          レシピを作成、編集、削除することができるアプリです。
+                        </li>
+                        <li>
+                          調理工程を一工程ずつインプットフォームに入力できるようにしています。
+                        </li>
                       </ul>
                     </div>
                     <img
-                      // src="/images/compositionApp.jpeg"
+                      src="/images/recipeApp.jpeg"
                       className={utilStyles.portfolioImg}
-                      alt="作曲補助アプリ"
+                      alt="レシピ管理アプリ"
                     />
                   </button>
                 </Link>

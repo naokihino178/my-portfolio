@@ -1,7 +1,5 @@
 import Head from "next/head";
 import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
 
 export const siteTitle = "ポートフォリオ";
 
@@ -10,7 +8,7 @@ export default function Layout({ children }) {
   return (
     <div className={styles.bg}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/computer_programming_man.ico" />
         <link
           href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
           rel="stylesheet"
@@ -35,16 +33,6 @@ export default function Layout({ children }) {
         />
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
       </Head>
-      {/* <header className={`${styles.header} ${utilStyles.headingSd}`}>
-        <div className={styles.headerNavContainer}>
-          <Link href="/">
-            <a className={styles.headerNav}>プロフィール</a>
-          </Link>
-          <Link href="/Portfolio">
-            <a className={styles.headerNav}>製作物</a>
-          </Link>
-        </div>
-      </header> */}
       <div className={styles.allContainer}>
         <div>
           {/* ここでやっとindex.jsのLayoutで囲まれた部分が表示 */}
