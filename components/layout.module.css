@@ -36,11 +36,10 @@
 .profileContainer {
   display: flex;
   color: #000;
+  flex-direction: column;
 }
 
 /* メイン */
-/* Linkで飛ぶのとSSGで飛ぶのの違いはなんや、どうやって分けるんや */
-
 .allContainer {
   min-height: 100vh;
   max-width: 85rem;
@@ -51,44 +50,50 @@
 }
 
 .profileMainContainer {
-  width: 75%;
-  padding: 20px 20px;
-  margin-left: 30%;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2);
   background: #ececec;
+  width: 100%;
+  padding: 20px 20px;
+  margin-left: 0;
 }
 
 .profileSubContainer {
-  width: 25%;
-  height: 450px;
-  padding: 20px 20px;
-  position: fixed;
   box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.2);
   background: #ececec;
   text-align: center;
+  width: 100%;
+  height: 100px;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
 }
 
-.profileImg {
-  border-radius: 9999px;
-  width: 150px;
+.githubIconContainer {
+  width: 310px;
   margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .main {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  color: #000;
 }
 
 /* スキル */
 
+.skillName {
+  margin-left: 20px;
+}
+
 .skillItem {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   margin: 10px 10px;
   padding: 5px 30px;
-  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
   position: relative;
   user-select: none;
 }
@@ -99,7 +104,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition-duration: 0.1s;
 }
 
 /* 製作物 */
@@ -127,25 +131,6 @@
 /* @media screen and (min-width: 480px) and (max-width: 959px) { */
 /* @media screen and (max-width: 959px) { */
 @media screen and (max-width: 1100px) {
-  .profileContainer {
-    flex-direction: column;
-  }
-
-  .profileMainContainer {
-    width: 100%;
-    padding: 20px 20px;
-    margin-left: 0;
-  }
-
-  .profileSubContainer {
-    width: 100%;
-    height: 500px;
-    padding: 20px 20px;
-    margin-bottom: 20px;
-    position: static;
-    font-size: 15px;
-  }
-
   .headerNavContainer {
     width: 420px;
     font-size: 16px;

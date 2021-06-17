@@ -4,7 +4,6 @@ import styles from "./layout.module.css";
 export const siteTitle = "ポートフォリオ";
 
 export default function Layout({ children }) {
-  // childrenはラップ要素、homeはトップページを表示？？
   return (
     <div className={styles.bg}>
       <Head>
