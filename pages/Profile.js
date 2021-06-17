@@ -11,38 +11,15 @@ const Profile = () => {
     <Layout>
       <section className={styles.profileContainer}>
         <div className={styles.profileSubContainer}>
-          <img
-            src="/images/profile.jpg"
-            className={styles.profileImg}
-            alt="profileImg"
-          />
-          <p className={utilStyles.headingMd}>hino</p>
-          <p>
-            フロントエンドエンジニアを
-            <br />
-            目指しています。
-          </p>
-          <p>
-            Email: <a>naoki.hino178@gmail.com</a>
-          </p>
-          <a
-            href="https://twitter.com/n__hino"
-            className={utilStyles.twitterButton}
-          >
-            <i class="fab fa-twitter-square"></i>
-          </a>
-          <a
-            href="https://line.me/ti/p/lI2wMbweX1"
-            className={utilStyles.lineButton}
-          >
-            <i class="fab fa-line"></i>
-          </a>
-          <a
-            href="https://github.com/naokihino178"
-            className={utilStyles.githubButton}
-          >
-            <i class="fab fa-github-square"></i>
-          </a>
+          <div className={styles.githubIconContainer}>
+            <a
+              href="https://github.com/naokihino178"
+              className={utilStyles.githubButton}
+            >
+              <i class="fab fa-github-square"></i>
+            </a>
+            <p> ← GitHubのアカウントはこちらです。</p>
+          </div>
         </div>
         <div className={styles.profileMainContainer}>
           <h2
@@ -55,7 +32,8 @@ const Profile = () => {
           </h2>
           {openSkillSection ? (
             <>
-              <p>マークアップ言語: HTML, CSS, Sass</p>
+              <h3>【マークアップ言語】</h3>
+              <p className={styles.skillName}>HTML, CSS, Sass</p>
               <section className={styles.main}>
                 <div className={styles.skillItem}>
                   <div className={styles.skillImg}>
@@ -73,9 +51,8 @@ const Profile = () => {
                   </div>
                 </div>
               </section>
-              <p className={utilStyles.headingSd}>
-                プログラミング言語: JavaScript, TypeScript
-              </p>
+              <h3>【プログラミング言語】</h3>
+              <p className={styles.skillName}>JavaScript, TypeScript</p>
               <section className={styles.main}>
                 <div className={styles.skillItem}>
                   <div className={styles.skillImg}>
@@ -88,7 +65,10 @@ const Profile = () => {
                   </div>
                 </div>
               </section>
-              <p>ライブラリ、フレームワーク: React, Redux, Next.js, Express</p>
+              <h3>【ライブラリ、フレームワーク】</h3>
+              <p className={styles.skillName}>
+                React, Redux, Material-UI, Express
+              </p>
               <section className={styles.main}>
                 <div className={styles.skillItem}>
                   <div className={styles.skillImg}>
@@ -102,7 +82,7 @@ const Profile = () => {
                 </div>
                 <div className={styles.skillItem}>
                   <div className={styles.skillImg}>
-                    <img src="/images/nextjs.svg" />
+                    <img src="/images/material-ui.svg" />
                   </div>
                 </div>
                 <div className={styles.skillItem}>
@@ -111,7 +91,10 @@ const Profile = () => {
                   </div>
                 </div>
               </section>
-              <p>データベース: MySQL, Firebase(Cloud Firestore)</p>
+              <h3>【データベース】</h3>
+              <p className={styles.skillName}>
+                MySQL, Firebase(Cloud Firestore)
+              </p>
               <section className={styles.main}>
                 <div className={styles.skillItem}>
                   <div className={styles.skillImg}>
@@ -124,13 +107,24 @@ const Profile = () => {
                   </div>
                 </div>
               </section>
-              <p>
-                その他: Firebase(Authentication, Storage), Git, GitHub, Postman
+              <h3>【その他】</h3>
+              <p className={styles.skillName}>
+                Firebase(Authentication, Storage), Heroku, CircleCI, Git, GitHub
               </p>
               <section className={styles.main}>
                 <div className={styles.skillItem}>
                   <div className={styles.skillImg}>
                     <img src="/images/firebase.svg" />
+                  </div>
+                </div>
+                <div className={styles.skillItem}>
+                  <div className={styles.skillImg}>
+                    <img src="/images/heroku-icon.svg" />
+                  </div>
+                </div>
+                <div className={styles.skillItem}>
+                  <div className={styles.skillImg}>
+                    <img src="/images/circleci.svg" />
                   </div>
                 </div>
                 <div className={styles.skillItem}>
@@ -141,11 +135,6 @@ const Profile = () => {
                 <div className={styles.skillItem}>
                   <div className={styles.skillImg}>
                     <img src="/images/github.svg" />
-                  </div>
-                </div>
-                <div className={styles.skillItem}>
-                  <div className={styles.skillImg}>
-                    <img src="/images/postman.svg" />
                   </div>
                 </div>
               </section>
@@ -159,7 +148,7 @@ const Profile = () => {
               setOpenPortfolioSection(!openPortfolioSection);
             }}
           >
-            {openSkillSection ? "▲" : "▼"} 製作物
+            {openPortfolioSection ? "▲" : "▼"} 製作物
           </h2>
           {openPortfolioSection ? (
             <>
@@ -176,7 +165,6 @@ const Profile = () => {
                       </p>
                       <ul>
                         <li>ランキングを投稿するアプリです</li>
-                        <li>ユーザー情報の状態をReduxで管理しています。</li>
                       </ul>
                     </div>
                     <img
@@ -197,7 +185,6 @@ const Profile = () => {
                         <li>
                           問題の作成、編集、削除を行うことができるクイズアプリです。
                         </li>
-                        <li>Material-UIを用いてデザインを行っています。</li>
                       </ul>
                     </div>
                     <img
@@ -218,9 +205,6 @@ const Profile = () => {
                         <li>
                           趣味の作曲を効率化できないかと考え、作成したアプリです。
                         </li>
-                        <li>
-                          曲のキーを入力すると、ダイアトニックコードおよびよく使われるコード進行の一覧が表示されます。
-                        </li>
                       </ul>
                     </div>
                     <img
@@ -240,9 +224,6 @@ const Profile = () => {
                       <ul>
                         <li>
                           レシピを作成、編集、削除することができるアプリです。
-                        </li>
-                        <li>
-                          調理工程を一工程ずつインプットフォームに入力できるようにしています。
                         </li>
                       </ul>
                     </div>
