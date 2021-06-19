@@ -164,7 +164,7 @@ const Profile = () => {
                         Cloud Firestore, Storage))
                       </p>
                       <ul>
-                        <li>ランキングを投稿するアプリです</li>
+                        <li>ランキングを投稿するアプリです。</li>
                       </ul>
                     </div>
                     <img
