@@ -153,11 +153,19 @@ const Profile = () => {
           {openPortfolioSection ? (
             <>
               <section className={styles.main}>
+                <span>
+                  <a
+                    href="https://github.com/naokihino178/ranking-app"
+                    className={utilStyles.githubButton}
+                  >
+                    <i class="fab fa-github-square"></i>
+                  </a>
+                </span>
                 <Link href="https://ranking-app-naokihino178.vercel.app/">
                   <button className={styles.portfolioItem}>
                     <div className={styles.portfolioDesc}>
                       <h2 className={utilStyles.headingMd}>
-                        ランキング投稿アプリ
+                        ランキング共有アプリ{" "}
                       </h2>
                       <p className={utilStyles.headingSd}>
                         (React, TypeScript, Redux, Firebase(Authentication,
@@ -167,14 +175,22 @@ const Profile = () => {
                     <img
                       src="/images/rankingApp.jpeg"
                       className={utilStyles.portfolioImg}
-                      alt="作曲補助アプリ"
+                      alt="ランキング共有アプリ"
                     />
                   </button>
                 </Link>
+                <span>
+                  <a
+                    href="https://github.com/naokihino178/quiz-app"
+                    className={utilStyles.githubButton}
+                  >
+                    <i class="fab fa-github-square"></i>
+                  </a>
+                </span>
                 <Link href="https://quizapp-6ew7b2j3t-naokihino178.vercel.app/">
                   <button className={styles.portfolioItem}>
                     <div className={styles.portfolioDesc}>
-                      <h2 className={utilStyles.headingMd}>クイズアプリ</h2>
+                      <h2 className={utilStyles.headingMd}>クイズアプリ </h2>
                       <p className={utilStyles.headingSd}>
                         (React, TypeScript, Material-UI, Firebase)
                       </p>
@@ -186,10 +202,19 @@ const Profile = () => {
                     />
                   </button>
                 </Link>
+                <span>
+                  <a
+                    href="https://github.com/naokihino178/composition-app"
+                    className={utilStyles.githubButton}
+                  >
+                    <i class="fab fa-github-square"></i>
+                  </a>
+                </span>
+
                 <Link href="https://composition-app-naokihino178.vercel.app/">
                   <button className={styles.portfolioItem}>
                     <div className={styles.portfolioDesc}>
-                      <h2 className={utilStyles.headingMd}>作曲アプリ</h2>
+                      <h2 className={utilStyles.headingMd}>作曲補助アプリ </h2>
                       <p className={utilStyles.headingSd}>
                         (React, TypeScript, Firebase)
                       </p>
@@ -201,10 +226,20 @@ const Profile = () => {
                     />
                   </button>
                 </Link>
+                <span>
+                  <a
+                    href="https://github.com/naokihino178/recipe-app"
+                    className={utilStyles.githubButton}
+                  >
+                    <i class="fab fa-github-square"></i>
+                  </a>
+                </span>
                 <Link href="https://orenosetsuyakumeshi.herokuapp.com/">
                   <button className={styles.portfolioItem}>
                     <div className={styles.portfolioDesc}>
-                      <h2 className={utilStyles.headingMd}>レシピ管理アプリ</h2>
+                      <h2 className={utilStyles.headingMd}>
+                        レシピ管理アプリ{" "}
+                      </h2>
                       <p className={utilStyles.headingSd}>
                         (JavaScript(EJS), Express, MySQL, CircleCI, Heroku)
                       </p>
