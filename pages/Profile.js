@@ -163,9 +163,6 @@ const Profile = () => {
                         (React, TypeScript, Redux, Firebase(Authentication,
                         Cloud Firestore, Storage))
                       </p>
-                      <ul>
-                        <li>ランキングを投稿するアプリです。</li>
-                      </ul>
                     </div>
                     <img
                       src="/images/rankingApp.jpeg"
@@ -174,18 +171,13 @@ const Profile = () => {
                     />
                   </button>
                 </Link>
-                <Link href="https://quizapp-taupe.vercel.app/">
+                <Link href="https://quizapp-6ew7b2j3t-naokihino178.vercel.app/">
                   <button className={styles.portfolioItem}>
                     <div className={styles.portfolioDesc}>
                       <h2 className={utilStyles.headingMd}>クイズアプリ</h2>
                       <p className={utilStyles.headingSd}>
                         (React, TypeScript, Material-UI, Firebase)
                       </p>
-                      <ul>
-                        <li>
-                          問題の作成、編集、削除を行うことができるクイズアプリです。
-                        </li>
-                      </ul>
                     </div>
                     <img
                       src="/images/quizApp.jpeg"
@@ -194,18 +186,13 @@ const Profile = () => {
                     />
                   </button>
                 </Link>
-                <Link href="https://composition-app.vercel.app">
+                <Link href="https://composition-app-naokihino178.vercel.app/">
                   <button className={styles.portfolioItem}>
                     <div className={styles.portfolioDesc}>
                       <h2 className={utilStyles.headingMd}>作曲アプリ</h2>
                       <p className={utilStyles.headingSd}>
                         (React, TypeScript, Firebase)
                       </p>
-                      <ul>
-                        <li>
-                          趣味の作曲を効率化できないかと考え、作成したアプリです。
-                        </li>
-                      </ul>
                     </div>
                     <img
                       src="/images/compositionApp.jpeg"
@@ -221,11 +208,6 @@ const Profile = () => {
                       <p className={utilStyles.headingSd}>
                         (JavaScript(EJS), Express, MySQL, CircleCI, Heroku)
                       </p>
-                      <ul>
-                        <li>
-                          レシピを作成、編集、削除することができるアプリです。
-                        </li>
-                      </ul>
                     </div>
                     <img
                       src="/images/recipeApp.jpeg"
