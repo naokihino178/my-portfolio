@@ -165,7 +165,7 @@ const Profile = () => {
                   <button className={styles.portfolioItem}>
                     <div className={styles.portfolioDesc}>
                       <h2 className={utilStyles.headingMd}>
-                        ランキング共有アプリ{" "}
+                        ランキング共有アプリ
                       </h2>
                       <p className={utilStyles.headingSd}>
                         (React, TypeScript, Redux, Firebase(Authentication,
